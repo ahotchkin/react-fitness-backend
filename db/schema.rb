@@ -10,10 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_04_213337) do
+ActiveRecord::Schema.define(version: 2020_08_04_215926) do
+
+  create_table "diaries", force: :cascade do |t|
+    t.date "date"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "exercises", force: :cascade do |t|
-    t.integer "user_id"
+    t.integer "user_id", null: false
     t.string "category"
     t.string "name"
     t.integer "duration_in_minutes"
@@ -21,6 +27,15 @@ ActiveRecord::Schema.define(version: 2020_08_04_213337) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_exercises_on_user_id"
+  end
+
+  create_table "user_diaries", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.integer "diary_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["diary_id"], name: "index_user_diaries_on_diary_id"
+    t.index ["user_id"], name: "index_user_diaries_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -36,4 +51,6 @@ ActiveRecord::Schema.define(version: 2020_08_04_213337) do
   end
 
   add_foreign_key "exercises", "users"
+  add_foreign_key "user_diaries", "diaries"
+  add_foreign_key "user_diaries", "users"
 end
