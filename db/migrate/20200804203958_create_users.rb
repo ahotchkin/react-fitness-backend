@@ -6,8 +6,8 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :gender
       t.integer :age
       t.integer :height_feet
-      t.integer :height_inches
-      t.integer :weight
+      t.float :height_inches
+      t.float :weight
 
       t.timestamps
     end
