@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  username: MyString
+  password_digest: MyString
+  gender: MyString
+  age: 1
+  height_feet: 1
+  height_inches: 1
+  weight: 1
+
+two:
+  username: MyString
+  password_digest: MyString
+  gender: MyString
+  age: 1
+  height_feet: 1
+  height_inches: 1
+  weight: 1
