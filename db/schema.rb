@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_04_215926) do
+ActiveRecord::Schema.define(version: 2020_08_05_015444) do
 
   create_table "diaries", force: :cascade do |t|
     t.date "date"
@@ -27,6 +27,55 @@ ActiveRecord::Schema.define(version: 2020_08_04_215926) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_exercises_on_user_id"
+  end
+
+  create_table "foods", force: :cascade do |t|
+    t.string "brand_name"
+    t.string "description"
+    t.string "serving_size"
+    t.integer "servings_per_container"
+    t.integer "calories"
+    t.integer "total_fat"
+    t.integer "saturated_fat"
+    t.integer "polyunsaturated_fat"
+    t.integer "monounsaturated_fat"
+    t.integer "trans_fat"
+    t.integer "cholesterol"
+    t.integer "sodium"
+    t.integer "total_carbohydrate"
+    t.integer "dietary_fiber"
+    t.integer "total_sugars"
+    t.integer "added_sugars"
+    t.integer "sugar_alcohols"
+    t.integer "protein"
+    t.integer "vitamin_a"
+    t.integer "vitamin_c"
+    t.integer "vitamin_d"
+    t.integer "calcium"
+    t.integer "iron"
+    t.integer "potassium"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "meal_foods", force: :cascade do |t|
+    t.integer "meal_id", null: false
+    t.integer "food_id", null: false
+    t.integer "number_of_servings"
+    t.integer "calories"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["food_id"], name: "index_meal_foods_on_food_id"
+    t.index ["meal_id"], name: "index_meal_foods_on_meal_id"
+  end
+
+  create_table "meals", force: :cascade do |t|
+    t.integer "diary_id", null: false
+    t.string "catory"
+    t.integer "calories"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["diary_id"], name: "index_meals_on_diary_id"
   end
 
   create_table "user_diaries", force: :cascade do |t|
@@ -51,6 +100,9 @@ ActiveRecord::Schema.define(version: 2020_08_04_215926) do
   end
 
   add_foreign_key "exercises", "users"
+  add_foreign_key "meal_foods", "foods"
+  add_foreign_key "meal_foods", "meals"
+  add_foreign_key "meals", "diaries"
   add_foreign_key "user_diaries", "diaries"
   add_foreign_key "user_diaries", "users"
 end

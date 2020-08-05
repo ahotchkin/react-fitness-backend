@@ -5,6 +5,9 @@ Rails.application.routes.draw do
       resources :exercises
       resources :diaries
       resources :user_diaries
+      resources :meals
+      resources :foods
+      resources :meal_foods
     end
   end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
