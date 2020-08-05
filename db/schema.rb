@@ -61,7 +61,7 @@ ActiveRecord::Schema.define(version: 2020_08_05_015444) do
   create_table "meal_foods", force: :cascade do |t|
     t.integer "meal_id", null: false
     t.integer "food_id", null: false
-    t.integer "number_of_servings"
+    t.float "number_of_servings"
     t.integer "calories"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -71,7 +71,7 @@ ActiveRecord::Schema.define(version: 2020_08_05_015444) do
 
   create_table "meals", force: :cascade do |t|
     t.integer "diary_id", null: false
-    t.string "catory"
+    t.string "category"
     t.integer "calories"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -95,6 +95,7 @@ ActiveRecord::Schema.define(version: 2020_08_05_015444) do
     t.integer "height_feet"
     t.float "height_inches"
     t.float "weight"
+    t.integer "daily_calorie_goal"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
