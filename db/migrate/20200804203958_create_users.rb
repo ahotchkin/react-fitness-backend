@@ -8,6 +8,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.integer :height_feet
       t.float :height_inches
       t.float :weight
+      t.integer :daily_calorie_goal
 
       t.timestamps
     end
