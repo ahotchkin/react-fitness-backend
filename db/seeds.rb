@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-ally = User.create(:username => "ally", :password_digest => "password", :gender => "female", :age => 30, :height_feet => 5, :height_inches => 5.75, :weight => 130.8)
+ally = User.create(:username => "ally", :password => "password", :gender => "female", :age => 30, :height_feet => 5, :height_inches => 5.75, :weight => 130.8)
 
 ally_run = ally.exercises.create(:category => "cardio", :name => "Outdoor Run", :duration_in_minutes => 60, :calories_burned => 300)
 

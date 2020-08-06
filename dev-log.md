@@ -45,12 +45,12 @@ Tuesday, 8/4
 - [x] Establish models & relationships
     * See chart
 <br><br>
-- [ ] Build out Rails API backend (at least a first round)
+- [x] Build out Rails API backend (at least a first round)
 <br><br>
 
 
 Thursday, 8/6
-- [ ] Add seed data and double-check models in rails console
+- [x] Add seed data and double-check models in rails console
 <br><br>
 - [ ] Add serializers -- fast JSON api
 <br><br>
