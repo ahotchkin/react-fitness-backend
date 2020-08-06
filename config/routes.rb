@@ -4,7 +4,6 @@ Rails.application.routes.draw do
       resources :users
       resources :exercises
       resources :diaries
-      resources :user_diaries
       resources :meals
       resources :foods
       resources :meal_foods
