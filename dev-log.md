@@ -52,8 +52,10 @@ Tuesday, 8/4
 Thursday, 8/6
 - [x] Add seed data and double-check models in rails console
 <br><br>
-- [ ] Add serializers -- fast JSON api
+- [x] Add serializers -- fast JSON api
 <br><br>
+
+Friday, 8/7
 - [ ] Mock user login -- add current_user to application controller
 <br><br>
 - [ ] Use ‘create-react-app’ to begin scaffolding the frontend
