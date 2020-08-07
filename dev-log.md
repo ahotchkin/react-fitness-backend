@@ -48,19 +48,26 @@ Tuesday, 8/4
 - [x] Build out Rails API backend (at least a first round)
 <br><br>
 
-
-Thursday, 8/6
+Wednesday, 8/5
 - [x] Add seed data and double-check models in rails console
 <br><br>
+
+Thursday, 8/6
 - [x] Add serializers -- fast JSON api
 <br><br>
 
 Friday, 8/7
 - [x] Mock user login -- add current_user to application controller
 <br><br>
-- [ ] Use ‘create-react-app’ to begin scaffolding the frontend
+- [x] Use ‘create-react-app’ to begin scaffolding the frontend
 <br><br>
-- [ ] Add Redux and establish Redux store
+- [x] Add Redux and establish Redux store
+<br><br>
+- [ ] Add user authentication
+<br><br>
+  - [ ] Log in
+  - [ ] Log out
+  - [ ] When application loads, grab current user
 <br><br>
 - [ ] Start wire framing application layout on the frontend -- think about components
 <br><br>
