@@ -56,7 +56,7 @@ Thursday, 8/6
 <br><br>
 
 Friday, 8/7
-- [ ] Mock user login -- add current_user to application controller
+- [x] Mock user login -- add current_user to application controller
 <br><br>
 - [ ] Use ‘create-react-app’ to begin scaffolding the frontend
 <br><br>
