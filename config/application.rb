@@ -33,5 +33,10 @@ module ReactFitnessBackend
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    # *************** configuring middleware to grab cookies
+    config.middleware.use ActionDispatch::Cookies
+    # *************** configuring middleware to grab sessions
+    config.middleware.use ActionDispatch::Session::CookieStore, key: '_cookie_name'
   end
 end
