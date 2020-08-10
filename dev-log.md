@@ -63,12 +63,15 @@ Friday, 8/7
 <br><br>
 - [x] Add Redux and establish Redux store
 <br><br>
+
+Monday, 8/10
 - [ ] Add user authentication
 <br><br>
-  - [ ] Log in
+  - [x] Log in
   - [ ] Log out
   - [ ] When application loads, grab current user
 <br><br>
 - [ ] Start wire framing application layout on the frontend -- think about components
 <br><br>
 - [ ] Add a couple components
+<br><br>
