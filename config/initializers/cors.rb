@@ -7,10 +7,15 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins '*'
+    # origins '*'
+    # whitelisted so it will allow you to fire up cookies and sessions again (you've told Rails to do so with the 2 lines of code added to application.rb)
+    origins 'http://localhost:3000'
 
     resource '*',
       headers: :any,
-      methods: [:get, :post, :put, :patch, :delete, :options, :head]
+      methods: [:get, :post, :put, :patch, :delete, :options, :head],
+
+      # in fetch requests that require some sort of authorization, you can now add credentials: "include"
+      credentials: true
   end
 end
