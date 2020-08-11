@@ -71,10 +71,11 @@ Monday, 8/10
 <br><br>
 
 Tuesday, 8/11
-- [ ] Add user authentication
+- [x] Add user authentication
 <br><br>
-  - [ ] Log out
-  - [ ] When application loads, grab current user
+  - [x] Log out
+    - *Need to move this component around*
+  - [x] When application loads, grab current user
 <br><br>
 - [ ] Add sign up functionality
 <br><br>
@@ -82,3 +83,6 @@ Tuesday, 8/11
 <br><br>
 - [ ] Add a couple components
 <br><br>
+- [ ] Add react router
+<br><br>
+- [ ] Add 3rd party CSS library (Bootstrap?)
