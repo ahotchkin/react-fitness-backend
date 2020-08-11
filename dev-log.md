@@ -65,11 +65,18 @@ Friday, 8/7
 <br><br>
 
 Monday, 8/10
-- [ ] Add user authentication
+- [x] Add user authentication
 <br><br>
   - [x] Log in
+<br><br>
+
+Tuesday, 8/11
+- [ ] Add user authentication
+<br><br>
   - [ ] Log out
   - [ ] When application loads, grab current user
+<br><br>
+- [ ] Add sign up functionality
 <br><br>
 - [ ] Start wire framing application layout on the frontend -- think about components
 <br><br>
