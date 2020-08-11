@@ -68,6 +68,7 @@ Monday, 8/10
 - [x] Add user authentication
 <br><br>
   - [x] Log in
+  - [x] When application loads, grab current user
 <br><br>
 
 Tuesday, 8/11
@@ -75,7 +76,6 @@ Tuesday, 8/11
 <br><br>
   - [x] Log out
     - *Need to move this component around*
-  - [x] When application loads, grab current user
 <br><br>
 - [ ] Add sign up functionality
 <br><br>
