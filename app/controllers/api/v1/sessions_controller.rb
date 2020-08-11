@@ -21,4 +21,12 @@ class Api::V1::SessionsController < ApplicationController
       }
     end
   end
+
+  def destroy
+    session.clear
+    render json: {
+      # shows in the network tab in devtools to let you know it was successful
+      notice: "Successfully logged out"
+    }, status: 200
+  end
 end
