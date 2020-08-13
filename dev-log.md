@@ -77,6 +77,10 @@ Tuesday, 8/11
   - [x] Log out
     - *Need to move this component around*
 <br><br>
+
+Wednesday, 8/12
+
+Thursday 8/13
 - [ ] Add sign up functionality
 <br><br>
 - [ ] Start wire framing application layout on the frontend -- think about components
@@ -86,3 +90,6 @@ Tuesday, 8/11
 - [ ] Add react router
 <br><br>
 - [ ] Add 3rd party CSS library (Bootstrap?)
+<br><br>
+- [ ] Control what user info shows in state (don't want password_digest, etc.)
+- [ ] Build serializers for all Rails objects
