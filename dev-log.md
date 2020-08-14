@@ -81,6 +81,11 @@ Tuesday, 8/11
 Wednesday, 8/12
 
 Thursday 8/13
+- [x] Control what user info shows in state (don't want password_digest, etc.)
+<br><br>
+- [x] Build Exercise Serializer and Exercises components to display data to user
+
+Friday, 8/14
 - [ ] Add sign up functionality
 <br><br>
 - [ ] Start wire framing application layout on the frontend -- think about components
@@ -91,5 +96,7 @@ Thursday 8/13
 <br><br>
 - [ ] Add 3rd party CSS library (Bootstrap?)
 <br><br>
-- [ ] Control what user info shows in state (don't want password_digest, etc.)
 - [ ] Build serializers for all Rails objects
+<br><br>
+- [ ] Change Login component to React?
+<br><br>
