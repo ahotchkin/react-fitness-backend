@@ -86,17 +86,23 @@ Thursday 8/13
 - [x] Build Exercise Serializer and Exercises components to display data to user
 
 Friday, 8/14
-- [ ] Add sign up functionality
+- [x] Add sign up functionality
 <br><br>
+- [x] Add react router
+<br><br>
+
+Saturday, 8/15
+
+Sunday, 8/16
 - [ ] Start wire framing application layout on the frontend -- think about components
 <br><br>
 - [ ] Add a couple components
-<br><br>
-- [ ] Add react router
 <br><br>
 - [ ] Add 3rd party CSS library (Bootstrap?)
 <br><br>
 - [ ] Build serializers for all Rails objects
 <br><br>
-- [ ] Change Login component to React?
+- [ ] Change Login and Sign Up components to React?
+<br><br>
+- [ ] Add validations to all Rails models
 <br><br>
