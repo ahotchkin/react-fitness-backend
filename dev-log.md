@@ -94,15 +94,24 @@ Friday, 8/14
 Saturday, 8/15
 
 Sunday, 8/16
-- [ ] Start wire framing application layout on the frontend -- think about components
+- [x] Add a couple components
 <br><br>
-- [ ] Add a couple components
+
+Monday, 8/17
+- [x] Add New Exercise form on frontend and add that exercise to the api, once submitted
 <br><br>
+
+Tuesday, 8/18
 - [ ] Add 3rd party CSS library (Bootstrap?)
+<br><br>
+- [ ] Start wire framing application layout on the frontend -- think about components
 <br><br>
 - [ ] Build serializers for all Rails objects
 <br><br>
-- [ ] Change Login and Sign Up components to React?
+- [ ] Change Login, Logout, and Sign Up components to React?
 <br><br>
 - [ ] Add validations to all Rails models
 <br><br>
+
+Sunday, 8/23
+- [ ] Before I go on vacation, recap what I've done and what I'm planning to do first 2 days when I get back - send to Anastasia by Sunday
