@@ -8,3 +8,4 @@ class User < ApplicationRecord
 end
 
   # t.integer "daily_calorie_goal"
+  # add validation for gender? or not needed because form is drop down?
