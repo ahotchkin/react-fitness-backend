@@ -19,7 +19,8 @@ class UserSerializer
   attribute :diaries do |user|
     user.diaries.map do |diary|
       {
-        :date => diary.date
+        :date => diary.date,
+        :meals => diary.meals
       }
     end
   end
