@@ -1,6 +1,6 @@
 class DiarySerializer
   include FastJsonapi::ObjectSerializer
-  attributes :date
+  attributes :date, :meals
 
   belongs_to :user
 end
