@@ -106,9 +106,13 @@ Tuesday, 8/18
 <br><br>
 
 Wednesday, 8/19
-- [ ] Add 3rd party CSS library (Bootstrap?)
-<br><br>
 - [x] Start wire framing application layout on the frontend -- think about components
+<br><br>
+- [x] Render Meal Diary on dashboard
+<br><br>
+
+Thursday, 8/20
+- [ ] Add 3rd party CSS library (Bootstrap?)
 <br><br>
 - [ ] Build serializers for all Rails objects
 <br><br>
@@ -116,9 +120,9 @@ Wednesday, 8/19
 <br><br>
 - [ ] Organize components into folders, add Containers
 <br><br>
-- [ ] Render Meal Diary on dashboard
-<br><br>
 - [ ] Add functionality to update and delete exercises
+<br><br>
+- [ ] Render Meals for each Diary on frontend
 
 Sunday, 8/23
 - [ ] Before I go on vacation, recap what I've done and what I'm planning to do first 2 days when I get back - send to Anastasia by Sunday
