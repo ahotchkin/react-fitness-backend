@@ -20,9 +20,21 @@ class UserSerializer
     user.diaries.map do |diary|
       {
         :date => diary.date,
-        :meals => diary.meals
+        :meals => diary.meals,
+        # would also like food to be nested under meals. how do I do that????????????
       }
     end
   end
+
+  # attribute :meals do |user|
+  #   user.diaries.map do |diary|
+  #     diary.meals.map do |meal|
+  #       {
+  #         :foods => meal.foods
+  #       }
+  #     end
+  #   end
+  # end
+
 
 end
