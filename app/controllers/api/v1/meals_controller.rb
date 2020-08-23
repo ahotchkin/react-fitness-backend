@@ -4,6 +4,8 @@ class Api::V1::MealsController < ApplicationController
 
     if logged_in?
       # can only show meals for one diary at a time, which is okay for what I want. But is there a way to show ALL meals at once while using Serializer? If I just render json: @meals, I get an error on the frontend
+
+      # gives an error if there is no current diary. maybe don't show this on signup????? or automatically create diary on signup?????
       @current_diary = current_user.diaries.find_by :date => Date.today
       @current_meals = @current_diary.meals
       # render json: @meals, status: 200
