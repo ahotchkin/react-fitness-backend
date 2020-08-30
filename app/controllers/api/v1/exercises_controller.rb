@@ -26,6 +26,20 @@ class Api::V1::ExercisesController < ApplicationController
     end
   end
 
+  def show
+  end
+
+  def destroy
+    # make sure current user is logged in before deleting exercise??????????
+
+    # if current_user.id == current_review.user.id
+    #   current_review.delete
+    #   flash[:message] = "Review successfully deleted."
+    # end
+    @exercise = Exercise.find(params[:id])
+    @exercise.delete
+  end
+
 
   private
     # def set_user
