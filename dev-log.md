@@ -97,6 +97,11 @@ Thursday, 8/20
 Friday, 8/21
 - [x] Render Foods for each Meal on frontend
 
+Sunday, 8/30
+- [x] Add functionality to delete exercises
+- [ ] Add functionality to update exercises
+- [ ] Only display exercises from the current day
+
 
 Remaining To Dos
 Backend
@@ -105,10 +110,6 @@ Backend
 
 Frontend
 - [ ] Organize components into folders, add Containers
-
-Exercises
-- [ ] Add functionality to update and delete exercises
-- [ ] Only display exercises from the current day
 
 User Info
 - [ ] Generate daily calorie goal for a user based on sign in information
