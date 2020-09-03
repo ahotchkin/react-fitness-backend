@@ -3,7 +3,8 @@ class ApplicationController < ActionController::API
   include ::ActionController::Cookies
   # does this need to be private?
   def current_user
-    User.find_by(:id => session[:user_id])
+    # User.find_by(:id => session[:user_id])
+    current_user ||= User.find_by_id(session[:user_id]) if session[:user_id]
   end
 
   def logged_in?
