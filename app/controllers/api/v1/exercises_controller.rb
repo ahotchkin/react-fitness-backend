@@ -31,13 +31,14 @@ class Api::V1::ExercisesController < ApplicationController
 
   def destroy
     # make sure current user is logged in before deleting exercise??????????
-
-    # if current_user.id == current_review.user.id
-    #   current_review.delete
-    #   flash[:message] = "Review successfully deleted."
-    # end
-    @exercise = Exercise.find(params[:id])
-    @exercise.delete
+    # binding.pry
+    if current_user.id == current_exercise.user.id
+      current_exercise.delete
+      # how can I get this message to show on frontend????
+      flash[:alert] = "Exercise successfully deleted."
+    end
+    # @exercise = Exercise.find(params[:id])
+    # @exercise.delete
   end
 
 
@@ -45,6 +46,9 @@ class Api::V1::ExercisesController < ApplicationController
     # def set_user
     #   @user = User.find(params.id)
     # end
+    def current_exercise
+      exercise = Exercise.find_by_id(params[:id])
+    end
 
     def exercise_params
       params.require(:exercise).permit(:user_id, :category, :name, :duration_in_minutes, :calories_burned)
