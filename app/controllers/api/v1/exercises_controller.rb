@@ -29,6 +29,17 @@ class Api::V1::ExercisesController < ApplicationController
   def show
   end
 
+  def update
+    if current_exercise.update(exercise_params)
+      render json: ExerciseSerializer.new(current_exercise), status: 200
+    else
+      resp = {
+        :error => @exercise.errors.full_messages.to_sentence
+      }
+      render json: resp, status: :unprocessable_entity
+    end
+  end
+
   def destroy
     # make sure current user is logged in before deleting exercise??????????
     # binding.pry
