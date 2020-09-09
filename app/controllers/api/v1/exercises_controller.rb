@@ -27,6 +27,7 @@ class Api::V1::ExercisesController < ApplicationController
   end
 
   def show
+    render json: ExerciseSerializer.new(current_exercise), status: 200
   end
 
   def update
@@ -45,8 +46,13 @@ class Api::V1::ExercisesController < ApplicationController
     # binding.pry
     if current_user.id == current_exercise.user.id
       current_exercise.delete
+      render json: { message: "Exercise successfully deleted" }, status: 200
       # how can I get this message to show on frontend????
-      flash[:alert] = "Exercise successfully deleted."
+    else
+      error_resp = {
+        error: "Exercise could not be found and deleted"
+      }
+      render json: error_resp, status: :unprocessable_entity
     end
     # @exercise = Exercise.find(params[:id])
     # @exercise.delete
