@@ -1,3 +1,5 @@
+<h4>Project Schedule</h4>
+
 Tuesday, 8/4
 
 - [x] Establish a domain (an app idea)
@@ -99,27 +101,32 @@ Friday, 8/21
 
 Sunday, 8/30
 - [x] Add functionality to delete exercises
-- [ ] Add functionality to update exercises
-- [ ] Only display exercises from the current day
+
+Wednesday, 9/9
+- [x] Add functionality to update exercises
+  - *Took longer than anticipated:*
+    - *Moved logic from App.js into ExerciseContainer.js*
+    - *Had to reconfigure routes and organization*
+
+Thursday, 9/10
+- [ ] Organize components into folders, add Containers
+- [ ] Split routes into modules
 
 
-Remaining To Dos
+<h5>Remaining To Dos</h5>
+<i>Required</i>
+
 Backend
 - [ ] Build serializers for all Rails objects
 - [ ] Add validations to all Rails models
 
-Frontend
-- [ ] Organize components into folders, add Containers
+Dashboard
+- [ ] Display user information
+- [ ] Display overview of exercise information for current day
+- [ ] Display diary for current day
 
-User Info
-- [ ] Generate daily calorie goal for a user based on sign in information
-- [ ] Subtract calories burned from exercise from daily calorie goal
-
-Foods
-- [ ] Add functionality to add, update, and delete food from a meal
-- [ ] Add functionality to search for food in the database
-- [ ] Add functionality to add food to the database
-- [ ] In user’s diary, display servings consumed and calories consumed for each food
+Exercises
+- [ ] Only display exercises from the current day
 
 Diary
 - [ ] Automatically add Diary for every day when user signs up - or just when user searches for a particular date / it’s today and no diary is created yet?
@@ -127,11 +134,38 @@ Diary
 Meal
 - [ ] Automatically add Meals for when a Diary is created - Breakfast, Lunch, Dinner, Snacks
 
+Foods
+- [ ] Add functionality to add, update, and delete food from a meal
+- [ ] Add functionality to search for food in the database
+- [ ] Add functionality to add food to the database
+- [ ] In user’s diary, display servings consumed and calories consumed for each food
+
+NavBar
+- [ ] Add NavBar
+
 Styling
 - [ ] Add 3rd party CSS library (Bootstrap?)
+
+
+<i>Wishlist</i>
+
+User Info
+- [ ] Generate daily calorie goal for a user based on sign in information
+- [ ] Subtract calories burned from exercise from daily calorie goal
+- [ ] Calculate macros based on food consumed during the day and display graphic
+- [ ] Calculate nutrients based on food consumed during the day and display graphics
+
+Dashboard
+- [ ] Display macro information for current day
+- [ ] Display nutrient information for current day
+
+Foods
+- [ ] Recommend foods to eat based on current daily consumption
 
 Testing
 - [ ] Add backend and frontend tests
 
-Sunday, 8/23
-- [ ] Before I go on vacation, recap what I've done and what I'm planning to do first 2 days when I get back - send to Anastasia by Sunday
+
+
+<b>ISSUES</b>
+- [ ] Can’t type urls into url bar, paths only work when buttons/links are clicked on. Otherwise, "/" is re-rendered when any path is typed in.
