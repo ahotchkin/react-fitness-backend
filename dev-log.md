@@ -109,8 +109,15 @@ Wednesday, 9/9
     - *Had to reconfigure routes and organization*
 
 Thursday, 9/10
-- [ ] Organize components into folders, add Containers
-- [ ] Split routes into modules
+- [x] Organize components into folders, add Containers
+
+Friday, 9/11
+Diary
+- [x] Add functionality for user to create diary every day
+
+Meal
+- [ ] Automatically add Meals for when a Diary is created - Breakfast, Lunch, Dinner, Snacks
+
 
 
 <h5>Remaining To Dos</h5>
@@ -128,17 +135,14 @@ Dashboard
 Exercises
 - [ ] Only display exercises from the current day
 
-Diary
-- [ ] Automatically add Diary for every day when user signs up - or just when user searches for a particular date / it’s today and no diary is created yet?
-
-Meal
-- [ ] Automatically add Meals for when a Diary is created - Breakfast, Lunch, Dinner, Snacks
-
 Foods
 - [ ] Add functionality to add, update, and delete food from a meal
 - [ ] Add functionality to search for food in the database
 - [ ] Add functionality to add food to the database
 - [ ] In user’s diary, display servings consumed and calories consumed for each food
+
+Routes
+- [ ] Split routes into modules
 
 NavBar
 - [ ] Add NavBar
@@ -159,6 +163,10 @@ Dashboard
 - [ ] Display macro information for current day
 - [ ] Display nutrient information for current day
 
+Diary
+- [ ] Automatically add Diary for every day when user signs up - or just when user searches for a particular date / it’s today and no diary is created yet?
+  - *Install whenever gem to schedule diary creation*
+
 Foods
 - [ ] Recommend foods to eat based on current daily consumption
 
@@ -168,4 +176,6 @@ Testing
 
 
 <b>ISSUES</b>
-- [ ] Can’t type urls into url bar, paths only work when buttons/links are clicked on. Otherwise, "/" is re-rendered when any path is typed in.
+- [x] Can’t type urls into url bar, paths only work when buttons/links are clicked on. Otherwise, "/" is re-rendered when any path is typed in.
+  - *Fixed by rendering Home instead of Redirecting to "/" in App.js for paths in question (/exercises, /diaries)*
+- [ ] Get an error if I type /exercises/:id/edit into url bar: Cannot read property 'attributes' of undefined. Works by clicking on Update link for the exercise.
