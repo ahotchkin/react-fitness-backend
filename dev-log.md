@@ -116,9 +116,10 @@ Diary
 - [x] Add functionality for user to create diary every day
 
 Meal
-- [ ] Automatically add Meals for when a Diary is created - Breakfast, Lunch, Dinner, Snacks
+- [x] Automatically add Meals for when a Diary is created - Breakfast, Lunch, Dinner, Snacks
 
-
+Foods
+- [ ] Add functionality to add, update, and delete food from a meal
 
 <h5>Remaining To Dos</h5>
 <i>Required</i>
@@ -136,7 +137,6 @@ Exercises
 - [ ] Only display exercises from the current day
 
 Foods
-- [ ] Add functionality to add, update, and delete food from a meal
 - [ ] Add functionality to search for food in the database
 - [ ] Add functionality to add food to the database
 - [ ] In user’s diary, display servings consumed and calories consumed for each food
