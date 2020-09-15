@@ -118,8 +118,14 @@ Diary
 Meal
 - [x] Automatically add Meals for when a Diary is created - Breakfast, Lunch, Dinner, Snacks
 
+Monday, 9/14
 Foods
-- [ ] Add functionality to add, update, and delete food from a meal
+- [x] Add functionality to add food to a meal
+  - *Had to update how information was pulled from database - change from just using foods to using foods AND mealFoods so I can differentiate between adding foods to a meal and adding foods to the database*
+
+Tuesday, 9/15
+- [ ] Add field for user to enter number of servings consumed for a meal food, automatically determine calories based on this information
+- [ ] Add functionality to update and delete foods from a meal
 
 <h5>Remaining To Dos</h5>
 <i>Required</i>
@@ -140,6 +146,7 @@ Foods
 - [ ] Add functionality to search for food in the database
 - [ ] Add functionality to add food to the database
 - [ ] In user’s diary, display servings consumed and calories consumed for each food
+
 
 Routes
 - [ ] Split routes into modules
