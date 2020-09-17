@@ -1,6 +1,7 @@
 class MealFoodSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :number_of_servings, :calories
+  # keep meal and food if I end up restructuring?????
+  attributes :number_of_servings, :calories, :meal, :food
 
   belongs_to :meal
   belongs_to :food
