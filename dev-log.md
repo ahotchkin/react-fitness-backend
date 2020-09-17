@@ -124,8 +124,12 @@ Foods
   - *Had to update how information was pulled from database - change from just using foods to using foods AND mealFoods so I can differentiate between adding foods to a meal and adding foods to the database*
 
 Tuesday, 9/15
-- [ ] Add field for user to enter number of servings consumed for a meal food, automatically determine calories based on this information
+- [x] Add field for user to enter number of servings consumed for a mealFood, automatically determine calories based on this information
+- [x] Update meal calories based on total calories for all mealFoods
+
+Wednesday, 9/16
 - [ ] Add functionality to update and delete foods from a meal
+- I THINK FRONTEND IS WORKING. SEE WHAT ERROR IS WHEN TRYING TO SUBMIT UPDATE. CHECK IN RAILS CONSOLE THAT UPDATE IS GOING THROUGH.
 
 <h5>Remaining To Dos</h5>
 <i>Required</i>
@@ -133,6 +137,7 @@ Tuesday, 9/15
 Backend
 - [ ] Build serializers for all Rails objects
 - [ ] Add validations to all Rails models
+  - [ ] Any fields that are supposed to be integers can ONLY be integers
 
 Dashboard
 - [ ] Display user information
