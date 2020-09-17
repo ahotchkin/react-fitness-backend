@@ -3,7 +3,7 @@ class CreateMeals < ActiveRecord::Migration[6.0]
     create_table :meals do |t|
       t.references :diary, null: false, foreign_key: true
       t.string :category
-      t.integer :calories
+      t.integer :calories, default: 0
 
       t.timestamps
     end
