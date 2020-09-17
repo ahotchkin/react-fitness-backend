@@ -33,7 +33,7 @@ class Api::V1::MealFoodsController < ApplicationController
   private
 
     def current_meal_food
-      meal_food = Exercise.find_by_id(params[:id])
+      meal_food = MealFood.find_by_id(params[:id])
     end
 
     def meal_food_params
