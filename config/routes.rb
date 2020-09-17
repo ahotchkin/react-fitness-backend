@@ -10,7 +10,9 @@ Rails.application.routes.draw do
       resources :users
       resources :exercises
       resources :diaries
-      resources :meals
+      resources :meals do
+        resources :foods
+      end
       resources :foods
       resources :meal_foods
     end
