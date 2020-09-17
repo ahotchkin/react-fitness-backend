@@ -128,8 +128,12 @@ Tuesday, 9/15
 - [x] Update meal calories based on total calories for all mealFoods
 
 Wednesday, 9/16
-- [ ] Add functionality to update and delete foods from a meal
+- [x] Started to add functionality to update a meal
 - I THINK FRONTEND IS WORKING. SEE WHAT ERROR IS WHEN TRYING TO SUBMIT UPDATE. CHECK IN RAILS CONSOLE THAT UPDATE IS GOING THROUGH.
+
+Thursday, 9/17
+- [ ] Add functionality to update and delete foods from a meal
+
 
 <h5>Remaining To Dos</h5>
 <i>Required</i>
