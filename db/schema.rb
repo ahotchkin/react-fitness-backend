@@ -74,7 +74,7 @@ ActiveRecord::Schema.define(version: 2020_08_05_015444) do
   create_table "meals", force: :cascade do |t|
     t.integer "diary_id", null: false
     t.string "category"
-    t.integer "calories"
+    t.integer "calories", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["diary_id"], name: "index_meals_on_diary_id"
