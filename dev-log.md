@@ -132,8 +132,16 @@ Wednesday, 9/16
 - I THINK FRONTEND IS WORKING. SEE WHAT ERROR IS WHEN TRYING TO SUBMIT UPDATE. CHECK IN RAILS CONSOLE THAT UPDATE IS GOING THROUGH.
 
 Thursday, 9/17
-- [ ] Add functionality to update and delete foods from a meal
+- [x] Continue working on functionality to update and delete foods from a meal
+- [x] In user’s diary, display servings consumed and calories consumed for each food
 
+Friday, 9/18
+- [x] Complete functionality to update and delete foods from a meal
+- [x] Update meal calorie count when a meal_food is added, updated, or deleted
+  - *Still having some issues where meal calorie count is not updated appropriately, but it works for the part...*
+
+Saturday, 9/19
+- [x] Add validations for number of servings on meal_foods model
 
 <h5>Remaining To Dos</h5>
 <i>Required</i>
@@ -154,8 +162,6 @@ Exercises
 Foods
 - [ ] Add functionality to search for food in the database
 - [ ] Add functionality to add food to the database
-- [ ] In user’s diary, display servings consumed and calories consumed for each food
-
 
 Routes
 - [ ] Split routes into modules
