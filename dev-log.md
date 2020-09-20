@@ -144,7 +144,7 @@ Saturday, 9/19
 - [x] Add validations for number of servings on meal_foods model
 
 Sunday, 9/20
-- [ ] Add NavBar
+- [X] Add NavBar
 
 
 <h5>Remaining To Dos</h5>
@@ -173,6 +173,11 @@ Foods
 
 Routes
 - [ ] Split routes into modules
+
+Login / Sign Up
+- [ ] Password field should be hidden
+- [ ] Add link to Login from Sign Up page
+- [ ] Add link to Sign Up from Login page
 
 Styling
 - [ ] Add 3rd party CSS library (Bootstrap?)
@@ -209,4 +214,4 @@ Testing
 - [ ] Redux store:
     * Exercises under attributes are only updated on page refresh.
     * Exercises array on its own is updated with “Add Exercise” button click
-    * Exercises array is not cleared out when user logs out, is updated when new user logs in 
+    * Exercises array is not cleared out when user logs out, is updated when new user logs in
