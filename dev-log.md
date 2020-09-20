@@ -143,6 +143,10 @@ Friday, 9/18
 Saturday, 9/19
 - [x] Add validations for number of servings on meal_foods model
 
+Sunday, 9/20
+- [ ] Add NavBar
+
+
 <h5>Remaining To Dos</h5>
 <i>Required</i>
 
@@ -158,6 +162,10 @@ Dashboard
 
 Exercises
 - [ ] Only display exercises from the current day
+- [ ] Add field to search for exercises by date
+
+Diaries
+- [ ] Add field to search for diary by date
 
 Foods
 - [ ] Add functionality to search for food in the database
@@ -165,9 +173,6 @@ Foods
 
 Routes
 - [ ] Split routes into modules
-
-NavBar
-- [ ] Add NavBar
 
 Styling
 - [ ] Add 3rd party CSS library (Bootstrap?)
@@ -201,3 +206,7 @@ Testing
 - [x] Can’t type urls into url bar, paths only work when buttons/links are clicked on. Otherwise, "/" is re-rendered when any path is typed in.
   - *Fixed by rendering Home instead of Redirecting to "/" in App.js for paths in question (/exercises, /diaries)*
 - [ ] Get an error if I type /exercises/:id/edit into url bar: Cannot read property 'attributes' of undefined. Works by clicking on Update link for the exercise.
+- [ ] Redux store:
+    * Exercises under attributes are only updated on page refresh.
+    * Exercises array on its own is updated with “Add Exercise” button click
+    * Exercises array is not cleared out when user logs out, is updated when new user logs in 
