@@ -146,6 +146,14 @@ Saturday, 9/19
 Sunday, 9/20
 - [X] Add NavBar
 
+Monday, 9/21
+- [x] Add link to Login from Sign Up page
+- [x] Add link to Sign Up from Login page
+
+Tuesday, 9/22
+- [x] Add functionality to add food to the database
+  - [ ] If user comes from /foods, take them back to /foods
+  - [ ] If user comes from /meals/:meal_id/foods, take them back to /meals/:meal_id/foods
 
 <h5>Remaining To Dos</h5>
 <i>Required</i>
@@ -166,18 +174,16 @@ Exercises
 
 Diaries
 - [ ] Add field to search for diary by date
+- [ ] User can't have more than one diary for a day
 
 Foods
 - [ ] Add functionality to search for food in the database
-- [ ] Add functionality to add food to the database
 
 Routes
 - [ ] Split routes into modules
 
 Login / Sign Up
 - [ ] Password field should be hidden
-- [ ] Add link to Login from Sign Up page
-- [ ] Add link to Sign Up from Login page
 
 Styling
 - [ ] Add 3rd party CSS library (Bootstrap?)
