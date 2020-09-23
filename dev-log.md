@@ -152,8 +152,11 @@ Monday, 9/21
 
 Tuesday, 9/22
 - [x] Add functionality to add food to the database
-  - [ ] If user comes from /foods, take them back to /foods
-  - [ ] If user comes from /meals/:meal_id/foods, take them back to /meals/:meal_id/foods
+  - [x] If user comes from /foods, take them back to /foods
+  - [x] If user comes from /meals/:meal_id/foods, take them back to /meals/:meal_id/foods
+
+Wednesday, 9/23
+- [x] Add functionality to search for food in the database from both /foods and /meals/:meal_id/foods
 
 <h5>Remaining To Dos</h5>
 <i>Required</i>
@@ -175,9 +178,6 @@ Exercises
 Diaries
 - [ ] Add field to search for diary by date
 - [ ] User can't have more than one diary for a day
-
-Foods
-- [ ] Add functionality to search for food in the database
 
 Routes
 - [ ] Split routes into modules
