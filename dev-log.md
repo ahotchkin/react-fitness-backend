@@ -158,6 +158,12 @@ Tuesday, 9/22
 Wednesday, 9/23
 - [x] Add functionality to search for food in the database from both /foods and /meals/:meal_id/foods
 
+Thursday, 9/24
+- [x] Add field to search for diary by date
+  - *Install react-datepicker*
+- [x] User can't have more than one diary for a day
+- [x] When user selects a date where a diary doesn't exist, create diary for that day
+
 <h5>Remaining To Dos</h5>
 <i>Required</i>
 
@@ -174,10 +180,6 @@ Dashboard
 Exercises
 - [ ] Only display exercises from the current day
 - [ ] Add field to search for exercises by date
-
-Diaries
-- [ ] Add field to search for diary by date
-- [ ] User can't have more than one diary for a day
 
 Routes
 - [ ] Split routes into modules
@@ -200,10 +202,6 @@ User Info
 Dashboard
 - [ ] Display macro information for current day
 - [ ] Display nutrient information for current day
-
-Diary
-- [ ] Automatically add Diary for every day when user signs up - or just when user searches for a particular date / it’s today and no diary is created yet?
-  - *Install whenever gem to schedule diary creation*
 
 Foods
 - [ ] Recommend foods to eat based on current daily consumption
