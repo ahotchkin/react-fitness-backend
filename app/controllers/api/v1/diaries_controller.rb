@@ -25,28 +25,26 @@ class Api::V1::DiariesController < ApplicationController
   #
   def create
     # should I use build to build on the user's diaries? if I do that do I need to pass in the user_id?????
-    if !Diary.find_by(:date => diary_params[:date])
-      @diary = Diary.new(diary_params)
-      if @diary.save
-        @breakfast = @diary.meals.build(:category => "breakfast")
-        @breakfast.save
+    @diary = Diary.new(diary_params)
+    if @diary.save
+      @breakfast = @diary.meals.build(:category => "breakfast")
+      @breakfast.save
 
-        @lunch = @diary.meals.build(:category => "lunch")
-        @lunch.save
+      @lunch = @diary.meals.build(:category => "lunch")
+      @lunch.save
 
-        @dinner = @diary.meals.build(:category => "dinner")
-        @dinner.save
+      @dinner = @diary.meals.build(:category => "dinner")
+      @dinner.save
 
-        @snacks = @diary.meals.build(:category => "snacks")
-        @snacks.save
+      @snacks = @diary.meals.build(:category => "snacks")
+      @snacks.save
 
-        render json: DiarySerializer.new(@diary), status: :created
-      else
-        resp = {
-          :error => @diary.errors.full_messages.to_sentence
-        }
-        render json: resp, status: :unprocessable_entity
-      end
+      render json: DiarySerializer.new(@diary), status: :created
+    else
+      resp = {
+        :error => @diary.errors.full_messages.to_sentence
+      }
+      render json: resp, status: :unprocessable_entity
     end
   end
 
