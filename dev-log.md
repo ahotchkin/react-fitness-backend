@@ -170,6 +170,8 @@ Friday, 9/25
 Monday, 9/28
 - [x] Update to “Create Diary” button if user selects a date where a diary doesn’t exist
     * Automatic creation is causing errors
+
+Tuesday, 9/29
 - [ ] When user adds mealFood to a diary other than today, take them back to that diary after adding
 - [ ] When user refreshes /meals/:mealId/foods, re-render same page (currently rendering /foods even though URL doesn’t change)    
 
