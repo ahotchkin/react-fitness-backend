@@ -164,6 +164,15 @@ Thursday, 9/24
 - [x] User can't have more than one diary for a day
 - [x] When user selects a date where a diary doesn't exist, create diary for that day
 
+Friday, 9/25
+- [x] Debug issue with Diary creation
+
+Monday, 9/28
+- [x] Update to “Create Diary” button if user selects a date where a diary doesn’t exist
+    * Automatic creation is causing errors
+- [ ] When user adds mealFood to a diary other than today, take them back to that diary after adding
+- [ ] When user refreshes /meals/:mealId/foods, re-render same page (currently rendering /foods even though URL doesn’t change)    
+
 <h5>Remaining To Dos</h5>
 <i>Required</i>
 
@@ -171,6 +180,15 @@ Backend
 - [ ] Build serializers for all Rails objects
 - [ ] Add validations to all Rails models
   - [ ] Any fields that are supposed to be integers can ONLY be integers
+
+Frontend
+- [ ] Clear everything from the store except foods upon logout
+- [ ] Make sure I’m not getting more information from the database that what is needed at the time - console.log whatever I can to make sure I’m never getting more info than I need
+    * Examples:
+        * console.log from actions/mealFoods.js:62
+        * console.log from actions/diaries.js:43
+        * console.log from actions/meals.js:43
+        * Getting meals array in Foods container - gets ALL meals for a user, seems like a lot
 
 Dashboard
 - [ ] Display user information
