@@ -173,7 +173,7 @@ Monday, 9/28
 
 Tuesday, 9/29
 - [ ] When user adds mealFood to a diary other than today, take them back to that diary after adding
-- [ ] When user refreshes /meals/:mealId/foods, re-render same page (currently rendering /foods even though URL doesn’t change)    
+
 
 <h5>Remaining To Dos</h5>
 <i>Required</i>
@@ -201,6 +201,9 @@ Exercises
 - [ ] Only display exercises from the current day
 - [ ] Add field to search for exercises by date
 
+Foods
+- [ ] When user refreshes /meals/:mealId/foods, re-render same page (currently rendering /foods even though URL doesn’t change)
+
 Routes
 - [ ] Split routes into modules
 
@@ -222,6 +225,9 @@ User Info
 Dashboard
 - [ ] Display macro information for current day
 - [ ] Display nutrient information for current day
+
+Diaries
+- [ ] When page is refreshed, diary that was previously displayed is still displayed (currently resets to today’s diary)
 
 Foods
 - [ ] Recommend foods to eat based on current daily consumption
