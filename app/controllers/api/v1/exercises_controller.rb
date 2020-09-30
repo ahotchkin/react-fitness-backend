@@ -68,7 +68,7 @@ class Api::V1::ExercisesController < ApplicationController
     end
 
     def exercise_params
-      params.require(:exercise).permit(:user_id, :category, :name, :duration_in_minutes, :calories_burned)
+      params.require(:exercise).permit(:user_id, :date, :category, :name, :duration_in_minutes, :calories_burned)
     end
 
 end
