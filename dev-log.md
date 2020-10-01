@@ -172,8 +172,13 @@ Monday, 9/28
     * Automatic creation is causing errors
 
 Tuesday, 9/29
-- [ ] When user adds mealFood to a diary other than today, take them back to that diary after adding
+- [x] When user adds mealFood to a diary other than today, take them back to that diary after adding
+  - [x] Account for ALL timezones (GMT-XXXX and GMT+XXXX)
 
+Wednesday, 9/30
+- [x] Only display exercises from the current day
+- [x] Add field to search for exercises by date
+- [x] When user adds/updates exercise for a date other than today, take them to the exercise date
 
 <h5>Remaining To Dos</h5>
 <i>Required</i>
@@ -196,10 +201,6 @@ Dashboard
 - [ ] Display user information
 - [ ] Display overview of exercise information for current day
 - [ ] Display diary for current day
-
-Exercises
-- [ ] Only display exercises from the current day
-- [ ] Add field to search for exercises by date
 
 Foods
 - [ ] When user refreshes /meals/:mealId/foods, re-render same page (currently rendering /foods even though URL doesn’t change)
