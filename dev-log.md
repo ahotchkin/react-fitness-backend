@@ -180,6 +180,14 @@ Wednesday, 9/30
 - [x] Add field to search for exercises by date
 - [x] When user adds/updates exercise for a date other than today, take them to the exercise date
 
+Thursday, 10/1
+- [x] When user refreshes /meals/:mealId/foods, re-render same page (currently rendering /foods even though URL doesn’t change)
+    * Had to add getMeals to FoodsContainer and call in componentDidMount to have access to meals at all times
+- [x] Fix bug when adding mealFoods to diary
+    * Since diary date was added, user was no longer able to go from diary > add food to meal > add food to database > add food to meal > diary
+    * Bug has been fixed and user can now add foods to meals after adding food to database
+
+
 <h5>Remaining To Dos</h5>
 <i>Required</i>
 
@@ -201,9 +209,6 @@ Dashboard
 - [ ] Display user information
 - [ ] Display overview of exercise information for current day
 - [ ] Display diary for current day
-
-Foods
-- [ ] When user refreshes /meals/:mealId/foods, re-render same page (currently rendering /foods even though URL doesn’t change)
 
 Routes
 - [ ] Split routes into modules
