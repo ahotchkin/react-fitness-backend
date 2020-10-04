@@ -8,6 +8,7 @@ class UserSerializer
   attribute :exercises do |user|
     user.exercises.map do |exercise|
       {
+        :date => exercise.date,
         :category => exercise.category,
         :name => exercise.name,
         :duration_in_minutes => exercise.duration_in_minutes,
