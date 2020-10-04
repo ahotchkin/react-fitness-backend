@@ -187,16 +187,44 @@ Thursday, 10/1
     * Since diary date was added, user was no longer able to go from diary > add food to meal > add food to database > add food to meal > diary
     * Bug has been fixed and user can now add foods to meals after adding food to database
 
+Friday, 10/2
+Dashboard
+- [x] Display user information
+- [x] Display overview of exercise information for current day
 
-<h5>Remaining To Dos</h5>
-<i>Required</i>
+Saturday, 10/3
+- [x] Add daily calories burned to meal diary and exercise pages
 
-Backend
-- [ ] Build serializers for all Rails objects
-- [ ] Add validations to all Rails models
-  - [ ] Any fields that are supposed to be integers can ONLY be integers
+Sunday, 10/4
+- [ ] Reorganize top level files
+    - [x] App renders MainContainer.js
+    - [ ] MainContainer.js holds all routes and any functions that other containers need access to
+    - [x] Dashboard renders user dashboard
+- [x] Add daily calories burned to dashboard (pull from state.exercises instead of currentUser.attributes.exercises so information is automatically updated)
+- [ ] Add daily calories consumed and daily calories remaining to meal diary and dashboard
+- [ ] Display diary overview for current day
 
-Frontend
+Monday, 10/5
+User Info
+- [ ] Generate daily calorie goal for a user based on sign in information
+- [ ] Subtract calories burned from exercise from daily calorie goal
+
+Tuesday, 10/6
+Foods
+- [ ] Add note to foods/new letting user know what information is required vs. what information is recommended
+
+User Info
+- [ ] Calculate macros based on food consumed during the day and display graphic
+- [ ] Calculate nutrients based on food consumed during the day and display graphics
+
+Dashboard
+- [ ] Display macro information for current day
+- [ ] Display nutrient information for current day
+
+Wednesday, 10/7
+- [ ] Remove any unnecessary associations
+    * i.e. if I don’t ever access currentUser.exercises should the relationship exist in the Redux store?
+    * Frontend
 - [ ] Clear everything from the store except foods upon logout
 - [ ] Make sure I’m not getting more information from the database that what is needed at the time - console.log whatever I can to make sure I’m never getting more info than I need
     * Examples:
@@ -205,32 +233,43 @@ Frontend
         * console.log from actions/meals.js:43
         * Getting meals array in Foods container - gets ALL meals for a user, seems like a lot
 
-Dashboard
-- [ ] Display user information
-- [ ] Display overview of exercise information for current day
-- [ ] Display diary for current day
+Thursday, 10/8
+Backend
+- [ ] Build serializers for all Rails objects
+- [ ] Add validations to all Rails models
+    - [ ] Any fields that are supposed to be integers can ONLY be integers
 
-Routes
-- [ ] Split routes into modules
+Friday, 10/9
+Styling
+- [ ] Add 3rd party CSS library (Bootstrap?)
 
 Login / Sign Up
 - [ ] Password field should be hidden
 
-Styling
-- [ ] Add 3rd party CSS library (Bootstrap?)
+Saturday, 10/10
+- [ ] Finish styling
+- [ ] Begin refactor
+
+Sunday, 10/11
+- [ ] Finish refactor
+
+Monday, 10/12
+- [ ] Blog
+- [ ] Video demo
+- [ ] Submit project
+
+Tuesday, 10/13
+- [ ] Call with Anastasia
 
 
-<i>Wishlist</i>
+<h5>Remaining To Dos</h5>
+<i>Required</i>
 
-User Info
-- [ ] Generate daily calorie goal for a user based on sign in information
-- [ ] Subtract calories burned from exercise from daily calorie goal
-- [ ] Calculate macros based on food consumed during the day and display graphic
-- [ ] Calculate nutrients based on food consumed during the day and display graphics
+Routes (???????????????)
+- [ ] Split into modules
 
-Dashboard
-- [ ] Display macro information for current day
-- [ ] Display nutrient information for current day
+
+Wishlist
 
 Diaries
 - [ ] When page is refreshed, diary that was previously displayed is still displayed (currently resets to today’s diary)
@@ -243,11 +282,27 @@ Testing
 
 
 
-<b>ISSUES</b>
+ISSUES
 - [x] Can’t type urls into url bar, paths only work when buttons/links are clicked on. Otherwise, "/" is re-rendered when any path is typed in.
-  - *Fixed by rendering Home instead of Redirecting to "/" in App.js for paths in question (/exercises, /diaries)*
+    - *Fixed by rendering Home instead of Redirecting to "/" in App.js for paths in question (/exercises, /diaries)*
 - [ ] Get an error if I type /exercises/:id/edit into url bar: Cannot read property 'attributes' of undefined. Works by clicking on Update link for the exercise.
 - [ ] Redux store:
     * Exercises under attributes are only updated on page refresh.
     * Exercises array on its own is updated with “Add Exercise” button click
     * Exercises array is not cleared out when user logs out, is updated when new user logs in
+- [x] Logout should redirect to “/“
+- [x] If I’m in “/meals/meal_id/foods” and I refresh, the URL stays the same but it refreshes as “/foods”
+
+
+QUESTIONS
+- [ ] Is there a way to redirect to “/“ for all routes except “/login” and “/signup” if not logged in?
+
+
+* Globetrotter part 7 - 1:06 into it (starting with /trips/new route) - left off
+* Globetrotter part 11 - 30 min in starts talking about dynamic routes on frontend; starts talking about updating record, goes into part 12
+
+
+THINGS I NEED TO UNDERSTAND
+- [ ] Spread operator - what is happening when I pass {…props} to a component?
+- [ ] How is reduce working? Used in MealCard.js - is this still being used?
+- [ ] event.persist() - do I need this?
