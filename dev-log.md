@@ -196,13 +196,15 @@ Saturday, 10/3
 - [x] Add daily calories burned to meal diary and exercise pages
 
 Sunday, 10/4
-- [ ] Reorganize top level files
+- [X] Reorganize top level files
     - [x] App renders MainContainer.js
-    - [ ] MainContainer.js holds all routes and any functions that other containers need access to
+    - [X] MainContainer.js holds all routes
     - [x] Dashboard renders user dashboard
 - [x] Add daily calories burned to dashboard (pull from state.exercises instead of currentUser.attributes.exercises so information is automatically updated)
-- [ ] Add daily calories consumed and daily calories remaining to meal diary and dashboard
 - [ ] Display diary overview for current day
+- [ ] Add daily calories consumed and daily calories remaining to meal diary and dashboard
+- [ ] In /diaries and /exercises, ensure that if user changes day the correct calorie count shows up for remaining, consumed, and burned
+
 
 Monday, 10/5
 User Info
@@ -249,6 +251,7 @@ Login / Sign Up
 Saturday, 10/10
 - [ ] Finish styling
 - [ ] Begin refactor
+  - [ ] MainContainer holds any functions that other containers need access to
 
 Sunday, 10/11
 - [ ] Finish refactor
