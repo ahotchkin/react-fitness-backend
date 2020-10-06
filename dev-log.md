@@ -202,14 +202,14 @@ Sunday, 10/4
     - [x] Dashboard renders user dashboard
 - [x] Add daily calories burned to dashboard (pull from state.exercises instead of currentUser.attributes.exercises so information is automatically updated)
 - [ ] Display diary overview for current day
-- [ ] Add daily calories consumed and daily calories remaining to meal diary and dashboard
-- [ ] In /diaries and /exercises, ensure that if user changes day the correct calorie count shows up for remaining, consumed, and burned
+- [x] Add daily calories consumed and daily calories remaining to meal diary and dashboard
+- [x] In /diaries and /exercises, ensure that if user changes day the correct calorie count shows up for remaining, consumed, and burned
 
 
 Monday, 10/5
 User Info
 - [ ] Generate daily calorie goal for a user based on sign in information
-- [ ] Subtract calories burned from exercise from daily calorie goal
+- [x] Subtract calories burned from exercise from daily calorie goal
 
 Tuesday, 10/6
 Foods
