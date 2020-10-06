@@ -201,7 +201,7 @@ Sunday, 10/4
     - [X] MainContainer.js holds all routes
     - [x] Dashboard renders user dashboard
 - [x] Add daily calories burned to dashboard (pull from state.exercises instead of currentUser.attributes.exercises so information is automatically updated)
-- [ ] Display diary overview for current day
+- [x] Display diary overview for current day
 - [x] Add daily calories consumed and daily calories remaining to meal diary and dashboard
 - [x] In /diaries and /exercises, ensure that if user changes day the correct calorie count shows up for remaining, consumed, and burned
 
@@ -213,7 +213,7 @@ User Info
 
 Tuesday, 10/6
 Foods
-- [ ] Add note to foods/new letting user know what information is required vs. what information is recommended
+- [x] Add note to foods/new letting user know what information is required vs. what information is recommended
 
 User Info
 - [ ] Calculate macros based on food consumed during the day and display graphic
