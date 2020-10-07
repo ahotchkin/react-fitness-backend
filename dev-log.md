@@ -208,7 +208,7 @@ Sunday, 10/4
 
 Monday, 10/5
 User Info
-- [ ] Generate daily calorie goal for a user based on sign in information
+- [x] Generate daily calorie goal for a user based on sign in information
 - [x] Subtract calories burned from exercise from daily calorie goal
 
 Tuesday, 10/6
@@ -273,6 +273,10 @@ Routes (???????????????)
 
 
 Wishlist
+
+User Info
+- [ ] Include option for units to be metric
+- [ ] Calculate daily calorie goal based on desired weight loss
 
 Diaries
 - [ ] When page is refreshed, diary that was previously displayed is still displayed (currently resets to today’s diary)
