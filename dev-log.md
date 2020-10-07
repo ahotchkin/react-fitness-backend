@@ -215,13 +215,9 @@ Tuesday, 10/6
 Foods
 - [x] Add note to foods/new letting user know what information is required vs. what information is recommended
 
-User Info
-- [ ] Calculate macros based on food consumed during the day and display graphic
-- [ ] Calculate nutrients based on food consumed during the day and display graphics
-
 Dashboard
-- [ ] Display macro information for current day
-- [ ] Display nutrient information for current day
+- [ ] Calculate macros based on food consumed during the day and display info
+- [ ] Calculate nutrients based on food consumed during the day and display info
 
 Wednesday, 10/7
 - [ ] Remove any unnecessary associations
@@ -277,6 +273,8 @@ Wishlist
 User Info
 - [ ] Include option for units to be metric
 - [ ] Calculate daily calorie goal based on desired weight loss
+- [ ] Give user option to set goals (i.e. weight, exercise, etc.)
+- [ ] Give user ability to change info (i.e. weight, activity level, etc.)
 
 Diaries
 - [ ] When page is refreshed, diary that was previously displayed is still displayed (currently resets to today’s diary)
