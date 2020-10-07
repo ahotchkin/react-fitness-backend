@@ -9,3 +9,5 @@ end
 
   # t.integer "daily_calorie_goal"
   # add validation for gender? or not needed because form is drop down?
+  # age must be 18 or older
+  # calorie goal must never be lower than 1200 per day
