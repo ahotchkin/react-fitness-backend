@@ -89,6 +89,7 @@ ActiveRecord::Schema.define(version: 2020_08_05_015444) do
     t.integer "height_feet"
     t.float "height_inches"
     t.float "weight"
+    t.string "lifestyle"
     t.integer "daily_calorie_goal"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
