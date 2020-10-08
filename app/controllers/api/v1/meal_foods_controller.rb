@@ -55,7 +55,7 @@ class Api::V1::MealFoodsController < ApplicationController
     end
 
     def meal_food_params
-      params.require(:meal_food).permit(:meal_id, :food_id, :number_of_servings, :calories)
+      params.require(:meal_food).permit(:meal_id, :food_id, :number_of_servings, :calories, :total_fat, :saturated_fat, :polyunsaturated_fat, :monounsaturated_fat, :trans_fat, :cholesterol, :sodium, :total_carbohydrate, :dietary_fiber, :total_sugars, :added_sugars, :sugar_alcohols, :protein, :vitamin_a, :vitamin_c, :vitamin_d, :calcium, :iron, :potassium)
     end
 
 end
