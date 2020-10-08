@@ -215,11 +215,11 @@ Tuesday, 10/6
 Foods
 - [x] Add note to foods/new letting user know what information is required vs. what information is recommended
 
+Wednesday, 10/7
 Dashboard
 - [ ] Calculate macros based on food consumed during the day and display info
 - [ ] Calculate nutrients based on food consumed during the day and display info
 
-Wednesday, 10/7
 - [ ] Remove any unnecessary associations
     * i.e. if I don’t ever access currentUser.exercises should the relationship exist in the Redux store?
     * Frontend
