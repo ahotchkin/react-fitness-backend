@@ -217,9 +217,8 @@ Foods
 
 Wednesday, 10/7
 Dashboard
-- [ ] Calculate macros based on food consumed during the day and display info
-- [ ] Calculate nutrients based on food consumed during the day and display info
-
+- [x] Calculate macros based on food consumed during the day and display info
+- [x] Calculate nutrients based on food consumed during the day and display info
 - [ ] Remove any unnecessary associations
     * i.e. if I don’t ever access currentUser.exercises should the relationship exist in the Redux store?
     * Frontend
@@ -275,6 +274,9 @@ User Info
 - [ ] Calculate daily calorie goal based on desired weight loss
 - [ ] Give user option to set goals (i.e. weight, exercise, etc.)
 - [ ] Give user ability to change info (i.e. weight, activity level, etc.)
+
+Dashboard
+- [ ] Display consumed nutrients vs. recommended daily consumption
 
 Diaries
 - [ ] When page is refreshed, diary that was previously displayed is still displayed (currently resets to today’s diary)
