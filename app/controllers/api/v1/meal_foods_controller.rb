@@ -1,9 +1,18 @@
 class Api::V1::MealFoodsController < ApplicationController
 
   def index
-    @meal_food = MealFood.all
+    if logged_in?
+      @meals = []
+      @meal_foods = []
+      current_user.diaries.each { |diary| @meals << diary.meals }
+      @meals.flatten.each { |meal| @meal_foods << meal.meal_foods }
+      render json: MealFoodSerializer.new(@meal_foods.flatten), status: 200
+    else
+      render json: {
+        error: "You must be logged in to see meal_foods"
+      }
+    end
 
-    render json: MealFoodSerializer.new(@meal_food), status: 200
   end
 
   def create
