@@ -219,7 +219,7 @@ Wednesday, 10/7
 Dashboard
 - [x] Calculate macros based on food consumed during the day and display info
 - [x] Calculate nutrients based on food consumed during the day and display info
-- [ ] Remove any unnecessary associations
+- [x] Remove any unnecessary associations
     * i.e. if I don’t ever access currentUser.exercises should the relationship exist in the Redux store?
 - [x] Clear everything from the store except foods upon logout
 - [ ] Make sure I’m not getting more information from the database that what is needed at the time - console.log whatever I can to make sure I’m never getting more info than I need
