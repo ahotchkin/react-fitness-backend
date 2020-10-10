@@ -1,18 +1,18 @@
 class Api::V1::UsersController < ApplicationController
-  before_action :set_user, only: [:show, :update, :destroy]
+  # before_action :set_user, only: [:show, :update, :destroy]
 
-  def index
-    @users = User.all
-
-    render json: @users, status: 200
-  end
+  # def index
+  #   @users = User.all
+  #
+  #   render json: @users, status: 200
+  # end
 
   def show
-    # @user = User.find(params[:id])
-    user_json = UserSerializer.new(@user).serialized_json
+    @user = User.find(params[:id])
+    # user_json = UserSerializer.new(@user).serialized_json
 
     # render json: @user, status: 200
-    render json: user_json
+    render json: UserSerializer.new(@user).serialized_json
   end
 
   def create
@@ -30,9 +30,9 @@ class Api::V1::UsersController < ApplicationController
 
 
   private
-    def set_user
-      @user = User.find(params[:id])
-    end
+    # def set_user
+    #   @user = User.find(params[:id])
+    # end
 
     def user_params
       params.require(:user).permit(:username, :password, :gender, :age, :height_feet, :height_inches, :weight, :lifestyle, :daily_calorie_goal)
