@@ -226,7 +226,7 @@ Dashboard
 
 Thursday, 10/8
 Backend
-- [ ] Build serializers for all Rails objects
+- [x] Build serializers for all Rails objects
 - [ ] Add validations to all Rails models
     - [ ] Any fields that are supposed to be integers can ONLY be integers
 
