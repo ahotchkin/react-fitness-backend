@@ -222,12 +222,7 @@ Dashboard
 - [x] Remove any unnecessary associations
     * i.e. if I don’t ever access currentUser.exercises should the relationship exist in the Redux store?
 - [x] Clear everything from the store except foods upon logout
-- [ ] Make sure I’m not getting more information from the database that what is needed at the time - console.log whatever I can to make sure I’m never getting more info than I need
-    * Examples:
-        * console.log from actions/mealFoods.js:62
-        * console.log from actions/diaries.js:43
-        * console.log from actions/meals.js:43
-        * Getting meals array in Foods container - gets ALL meals for a user, seems like a lot
+- [x] Make sure I’m not getting more information from the database that what is needed at the time - console.log whatever I can to make sure I’m never getting more info than I need
 
 Thursday, 10/8
 Backend
