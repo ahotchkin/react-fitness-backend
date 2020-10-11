@@ -3,5 +3,5 @@ class Meal < ApplicationRecord
   has_many :meal_foods
   has_many :foods, through: :meal_foods
 
-  # add validation for category names
+  validates :category, inclusion: { in: %w(Breakfast Lunch Dinner Snacks), message: "%{value} is not a valid category" }
 end
