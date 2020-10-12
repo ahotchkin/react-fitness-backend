@@ -232,14 +232,15 @@ Backend
 
 Friday, 10/9
 Styling
-- [ ] Add 3rd party CSS library (Bootstrap?)
+- [x] Add 3rd party CSS library (Bootstrap?)
 
 Login / Sign Up
-- [ ] Password field should be hidden
+- [x] Password field should be hidden
 
 Saturday, 10/10
 - [ ] Finish styling
 - [ ] Add placeholder examples in forms (i.e. new food serving size: 1 cup)
+- [ ] Review warnings in console
 - [ ] Begin refactor
   - [ ] MainContainer holds any functions that other containers need access to
 
