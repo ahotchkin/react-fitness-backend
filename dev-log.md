@@ -239,6 +239,7 @@ Login / Sign Up
 
 Saturday, 10/10
 - [ ] Finish styling
+- [ ] Add placeholder examples in forms (i.e. new food serving size: 1 cup)
 - [ ] Begin refactor
   - [ ] MainContainer holds any functions that other containers need access to
 
