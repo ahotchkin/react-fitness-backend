@@ -182,7 +182,6 @@ Wednesday, 9/30
 
 Thursday, 10/1
 - [x] When user refreshes /meals/:mealId/foods, re-render same page (currently rendering /foods even though URL doesn’t change)
-    * Had to add getMeals to FoodsContainer and call in componentDidMount to have access to meals at all times
 - [x] Fix bug when adding mealFoods to diary
     * Since diary date was added, user was no longer able to go from diary > add food to meal > add food to database > add food to meal > diary
     * Bug has been fixed and user can now add foods to meals after adding food to database
@@ -196,64 +195,68 @@ Saturday, 10/3
 - [x] Add daily calories burned to meal diary and exercise pages
 
 Sunday, 10/4
-- [X] Reorganize top level files
+- [x] Reorganize top level files
     - [x] App renders MainContainer.js
-    - [X] MainContainer.js holds all routes
+    - [x] MainContainer.js holds all routes
     - [x] Dashboard renders user dashboard
-- [x] Add daily calories burned to dashboard (pull from state.exercises instead of currentUser.attributes.exercises so information is automatically updated)
-- [x] Display diary overview for current day
-- [x] Add daily calories consumed and daily calories remaining to meal diary and dashboard
-- [x] In /diaries and /exercises, ensure that if user changes day the correct calorie count shows up for remaining, consumed, and burned
-
 
 Monday, 10/5
-User Info
-- [x] Generate daily calorie goal for a user based on sign in information
-- [x] Subtract calories burned from exercise from daily calorie goal
+- [x] Add daily calories burned to dashboard (pull from state.exercises instead of currentUser.attributes.exercises so information is automatically updated)
+- [x] Display diary overview for current day
 
 Tuesday, 10/6
-Foods
+- [x] Add daily calories consumed and daily calories remaining to meal diary and dashboard
+- [x] In /diaries and /exercises, ensure that if user changes day the correct calorie count shows up for remaining, consumed, and burned
 - [x] Add note to foods/new letting user know what information is required vs. what information is recommended
 
 Wednesday, 10/7
-Dashboard
+- [x] Generate daily calorie goal for a user based on sign in information
+- [x] Subtract calories burned from exercise from daily calorie goal
+
+Thursday, 10/8
 - [x] Calculate macros based on food consumed during the day and display info
+
+Friday, 10/9
 - [x] Calculate nutrients based on food consumed during the day and display info
+
+Saturday, 10/10
 - [x] Remove any unnecessary associations
     * i.e. if I don’t ever access currentUser.exercises should the relationship exist in the Redux store?
 - [x] Clear everything from the store except foods upon logout
 - [x] Make sure I’m not getting more information from the database that what is needed at the time - console.log whatever I can to make sure I’m never getting more info than I need
 
-Thursday, 10/8
+Sunday, 10/11
 Backend
-- [x] Build serializers for all Rails objects
+- [x] Build serializers for all Rails models
 - [x] Add validations to all Rails models
     - [x] Any fields that are supposed to be integers can ONLY be integers
 
-Friday, 10/9
+Monday, 10/12
 Styling
 - [x] Add 3rd party CSS library (Bootstrap?)
 
 Login / Sign Up
 - [x] Password field should be hidden
 
-Saturday, 10/10
+Tuesday, 10/13
+- [x] Style
+
+Wednesday, 10/14
 - [ ] Finish styling
 - [ ] Add placeholder examples in forms (i.e. new food serving size: 1 cup)
+- [ ] Add date picker to dashboard and utilize selected date throughout app?
 - [ ] Review warnings in console
 - [ ] Begin refactor
-  - [ ] MainContainer holds any functions that other containers need access to
+    - [ ] MainContainer holds any functions that other containers need access to
 
-Sunday, 10/11
+Thursday, 10/15
 - [ ] Finish refactor
 
-Monday, 10/12
+Friday, 10/16
 - [ ] Blog
 - [ ] Video demo
-- [ ] Submit project
+- [ ] Submit project & schedule assessment
 
-Tuesday, 10/13
-- [ ] Call with Anastasia
 
 
 <h5>Remaining To Dos</h5>
@@ -270,9 +273,15 @@ User Info
 - [ ] Calculate daily calorie goal based on desired weight loss
 - [ ] Give user option to set goals (i.e. weight, exercise, etc.)
 - [ ] Give user ability to change info (i.e. weight, activity level, etc.)
+- [ ] Add email address for user to send email updates
 
 Dashboard
 - [ ] Display consumed nutrients vs. recommended daily consumption
+    * Would need to calculate daily recommended consumption
+- [ ] Provide 7-day summary every Sunday
+    * Average calories per day
+    * Total exercise for the week, broken down by category
+    * # of days macro goals were achieved
 
 Diaries
 - [ ] When page is refreshed, diary that was previously displayed is still displayed (currently resets to today’s diary)
