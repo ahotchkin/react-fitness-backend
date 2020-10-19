@@ -239,9 +239,27 @@ Login / Sign Up
 - [x] Password field should be hidden
 
 Tuesday, 10/13
-- [x] Style
+- [x] Begin styling
 
 Wednesday, 10/14
+- [x] Style User dashboard
+
+Thursday, 10/15
+- [x] Style Meal Diary
+
+Friday, 10/16
+- [x] Style Exercises index page
+
+Saturday, 10/17
+- [x] Style Foods index page and Food Card
+
+Sunday, 10/18
+- [x] Continue Styling
+
+Monday, 10/19
+- [x] Add pie chart for daily macros on dashboard using Chart.js
+
+Tuesday, 10/20
 - [ ] Finish styling
 - [ ] Add placeholder examples in forms (i.e. new food serving size: 1 cup)
 - [ ] Add date picker to dashboard and utilize selected date throughout app?
@@ -249,10 +267,10 @@ Wednesday, 10/14
 - [ ] Begin refactor
     - [ ] MainContainer holds any functions that other containers need access to
 
-Thursday, 10/15
+Wednesday, 10/21
 - [ ] Finish refactor
 
-Friday, 10/16
+Thursday, 10/22
 - [ ] Blog
 - [ ] Video demo
 - [ ] Submit project & schedule assessment
