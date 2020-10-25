@@ -269,7 +269,7 @@ Wednesday, 10/21
 
 Sunday, 10/25
 - [x] Add nutrient goals to users database
-- [ ] Display nutrient goal progress on user dashboard
+- [x] Display nutrient goal progress on user dashboard
 - [ ] Add error styling to all forms
 - [ ] Finish styling
 - [ ] Add placeholder examples in forms (i.e. new food serving size: 1 cup)
