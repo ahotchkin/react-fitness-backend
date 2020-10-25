@@ -22,8 +22,8 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.integer :daily_sugar_goal
       t.integer :daily_protein_goal
       t.integer :daily_vitamin_a_goal
-      t.integer :daily_vitamin_c_fat_goal
-      t.integer :daily_vitamin_d_fat_goal
+      t.integer :daily_vitamin_c_goal
+      t.integer :daily_vitamin_d_goal
       t.integer :daily_calcium_goal
       t.integer :daily_iron_goal
       t.integer :daily_potassium_goal, default: 4700
