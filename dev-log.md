@@ -260,17 +260,25 @@ Monday, 10/19
 - [x] Add pie chart for daily macros on dashboard using Chart.js
 
 Tuesday, 10/20
+- [x] Style MealFood Update form
+- [x] Style Exercise Update form
+- [x] Style Add Food form
+
+Wednesday, 10/21
+- [x] Add meal macros to dashboard and style
+
+Sunday, 10/25
+- [x] Add nutrient goals to users database
+- [ ] Display nutrient goal progress on user dashboard
+- [ ] Add error styling to all forms
 - [ ] Finish styling
 - [ ] Add placeholder examples in forms (i.e. new food serving size: 1 cup)
 - [ ] Add date picker to dashboard and utilize selected date throughout app?
 - [ ] Review warnings in console
-- [ ] Begin refactor
+- [ ] Refactor
     - [ ] MainContainer holds any functions that other containers need access to
 
-Wednesday, 10/21
-- [ ] Finish refactor
-
-Thursday, 10/22
+Monday, 10/26
 - [ ] Blog
 - [ ] Video demo
 - [ ] Submit project & schedule assessment
@@ -310,12 +318,15 @@ Foods
 Testing
 - [ ] Add backend and frontend tests
 
+Accessibility
+- [ ] Add accessibility features
+
 
 
 ISSUES
 - [x] Can’t type urls into url bar, paths only work when buttons/links are clicked on. Otherwise, "/" is re-rendered when any path is typed in.
     - *Fixed by rendering Home instead of Redirecting to "/" in App.js for paths in question (/exercises, /diaries)*
-- [ ] Get an error if I type /exercises/:id/edit into url bar: Cannot read property 'attributes' of undefined. Works by clicking on Update link for the exercise.
+- [x] Get an error if I type /exercises/:id/edit into url bar: Cannot read property 'attributes' of undefined. Works by clicking on Update link for the exercise.
 - [ ] Redux store:
     * Exercises under attributes are only updated on page refresh.
     * Exercises array on its own is updated with “Add Exercise” button click
