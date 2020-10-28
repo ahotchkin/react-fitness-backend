@@ -39,24 +39,24 @@ ActiveRecord::Schema.define(version: 2020_08_05_015444) do
     t.float "servings_per_container"
     t.integer "calories"
     t.float "total_fat"
-    t.float "saturated_fat", default: 0.0
-    t.float "polyunsaturated_fat", default: 0.0
-    t.float "monounsaturated_fat", default: 0.0
-    t.float "trans_fat", default: 0.0
-    t.float "cholesterol", default: 0.0
-    t.float "sodium", default: 0.0
+    t.float "saturated_fat"
+    t.float "polyunsaturated_fat"
+    t.float "monounsaturated_fat"
+    t.float "trans_fat"
+    t.float "cholesterol"
+    t.float "sodium"
     t.float "total_carbohydrate"
-    t.float "dietary_fiber", default: 0.0
-    t.float "total_sugars", default: 0.0
-    t.float "added_sugars", default: 0.0
-    t.float "sugar_alcohols", default: 0.0
+    t.float "dietary_fiber"
+    t.float "total_sugars"
+    t.float "added_sugars"
+    t.float "sugar_alcohols"
     t.float "protein"
-    t.float "vitamin_a", default: 0.0
-    t.float "vitamin_c", default: 0.0
-    t.float "vitamin_d", default: 0.0
-    t.float "calcium", default: 0.0
-    t.float "iron", default: 0.0
-    t.float "potassium", default: 0.0
+    t.float "vitamin_a"
+    t.float "vitamin_c"
+    t.float "vitamin_d"
+    t.float "calcium"
+    t.float "iron"
+    t.float "potassium"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
