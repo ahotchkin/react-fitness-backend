@@ -270,15 +270,24 @@ Wednesday, 10/21
 Sunday, 10/25
 - [x] Add nutrient goals to users database
 - [x] Display nutrient goal progress on user dashboard
-- [ ] Add error styling to all forms
+
+Monday, 10/26
+- [x] Add icons
+- [x] Add date picker to dashboard and utilize selected date throughout app
+
+Tuesday, 10/27
+- [x] Add error styling to sign up and login forms
+
+Wednesday, 10/28
+- [ ] Add error styling to remaining forms
+
+
 - [ ] Finish styling
 - [ ] Add placeholder examples in forms (i.e. new food serving size: 1 cup)
-- [ ] Add date picker to dashboard and utilize selected date throughout app?
 - [ ] Review warnings in console
 - [ ] Refactor
     - [ ] MainContainer holds any functions that other containers need access to
 
-Monday, 10/26
 - [ ] Blog
 - [ ] Video demo
 - [ ] Submit project & schedule assessment
@@ -301,9 +310,11 @@ User Info
 - [ ] Give user ability to change info (i.e. weight, activity level, etc.)
 - [ ] Add email address for user to send email updates
 
+Forms
+- [ ] Is it possible to display backend errors on frontend?
+    * Currently handling backend and frontend errors separately
+
 Dashboard
-- [ ] Display consumed nutrients vs. recommended daily consumption
-    * Would need to calculate daily recommended consumption
 - [ ] Provide 7-day summary every Sunday
     * Average calories per day
     * Total exercise for the week, broken down by category
@@ -327,12 +338,14 @@ ISSUES
 - [x] Can’t type urls into url bar, paths only work when buttons/links are clicked on. Otherwise, "/" is re-rendered when any path is typed in.
     - *Fixed by rendering Home instead of Redirecting to "/" in App.js for paths in question (/exercises, /diaries)*
 - [x] Get an error if I type /exercises/:id/edit into url bar: Cannot read property 'attributes' of undefined. Works by clicking on Update link for the exercise.
-- [ ] Redux store:
+- [x] Redux store:
     * Exercises under attributes are only updated on page refresh.
     * Exercises array on its own is updated with “Add Exercise” button click
     * Exercises array is not cleared out when user logs out, is updated when new user logs in
 - [x] Logout should redirect to “/“
 - [x] If I’m in “/meals/meal_id/foods” and I refresh, the URL stays the same but it refreshes as “/foods”
+- [ ] Do I need to get info from the database in each individual container to ensure it is fetched if page refreshes? Currently having issues where foods are not always in state and need to go back to MainContainer to fetch them.
+- [ ] Add Food and MealFood Update form doesn't allow you to press "enter" with decimal, however user can click "Update"
 
 
 QUESTIONS
