@@ -7,7 +7,7 @@ class Api::V1::SessionsController < ApplicationController
       render json: UserSerializer.new(@user), status: 200
     else
       render json: {
-        error: "Invalid Credentials"
+        error: "Username or Password is incorrect."
       }
     end
   end
@@ -16,6 +16,7 @@ class Api::V1::SessionsController < ApplicationController
     if logged_in?
       render json: UserSerializer.new(current_user), status: 200
     else
+      # is this necessary?
       render json: {
         error: "No one logged in"
       }
