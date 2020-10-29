@@ -279,11 +279,13 @@ Tuesday, 10/27
 - [x] Add error styling to sign up and login forms
 
 Wednesday, 10/28
-- [ ] Add error styling to remaining forms
+- [x] Add error styling to remaining forms
+
+Thursday, 10/29
+- [x] Add placeholder examples in forms (i.e. new food serving size: 1 cup)
 
 
 - [ ] Finish styling
-- [ ] Add placeholder examples in forms (i.e. new food serving size: 1 cup)
 - [ ] Review warnings in console
 - [ ] Refactor
     - [ ] MainContainer holds any functions that other containers need access to
@@ -309,6 +311,8 @@ User Info
 - [ ] Give user option to set goals (i.e. weight, exercise, etc.)
 - [ ] Give user ability to change info (i.e. weight, activity level, etc.)
 - [ ] Add email address for user to send email updates
+- [ ] Add password requirements
+- [ ] Add password confirmation on sign up
 
 Forms
 - [ ] Is it possible to display backend errors on frontend?
@@ -332,7 +336,8 @@ Testing
 Accessibility
 - [ ] Add accessibility features
 
-
+Design
+- [ ] Add icons throughout
 
 ISSUES
 - [x] Can’t type urls into url bar, paths only work when buttons/links are clicked on. Otherwise, "/" is re-rendered when any path is typed in.
@@ -346,6 +351,8 @@ ISSUES
 - [x] If I’m in “/meals/meal_id/foods” and I refresh, the URL stays the same but it refreshes as “/foods”
 - [ ] Do I need to get info from the database in each individual container to ensure it is fetched if page refreshes? Currently having issues where foods are not always in state and need to go back to MainContainer to fetch them.
 - [ ] Add Food and MealFood Update form doesn't allow you to press "enter" with decimal, however user can click "Update"
+- [ ] Search feature doesn't work if a space is added
+- [ ] Do I still need to pass diaryDate in location state or is date working since it's in MainContainer?
 
 
 QUESTIONS
