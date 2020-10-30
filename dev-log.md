@@ -328,8 +328,10 @@ Date
 
 Foods
 - [ ] Recommend foods to eat based on current daily consumption
-- [ ] Add user_id to food so user can choose to see only foods they've created
+- [x] Add user_id to food so user can choose to see only foods they've created
+- [ ] Give user 2 options to view foods: My Foods and All Foods
 - [ ] Add recipes feature
+- [x] Display %DV for all nutrients in food card, specific to user's DV
 
 Testing
 - [ ] Add backend and frontend tests
@@ -358,7 +360,10 @@ ISSUES
 
 QUESTIONS
 - [ ] Is there a way to redirect to “/“ for all routes except “/login” and “/signup” if not logged in?
+- [ ] Is there a way to redirect to a route that exists if user types a route that doesn't exist?
+    * i.e. If user types in "/exercises/abcd" can I redirect to "/exercises"
 - [ ] Do I still need to pass diaryDate in location state or is date working since it's in MainContainer?
+- [ ] When user adds new food should I round nutrients to nearest integer or 1 decimal place?
 
 
 * Globetrotter part 7 - 1:06 into it (starting with /trips/new route) - left off
