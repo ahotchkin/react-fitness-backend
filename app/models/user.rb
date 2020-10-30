@@ -2,6 +2,7 @@ class User < ApplicationRecord
   has_secure_password
   has_many :exercises
   has_many :diaries
+  has_many :foods
 
   validates :username, :gender, :lifestyle, presence: true
   validates :username, uniqueness: true
@@ -10,5 +11,3 @@ class User < ApplicationRecord
   validates :height_inches, :numericality => { :only_float => true }
   validates :weight, :numericality => { :only_float => true, :greater_than => 0 }
 end
-
-  # add validation for gender? or not needed because form is drop down?
