@@ -284,7 +284,6 @@ Wednesday, 10/28
 Thursday, 10/29
 - [x] Add placeholder examples in forms (i.e. new food serving size: 1 cup)
 
-
 - [ ] Finish styling
 - [ ] Review warnings in console
 - [ ] Refactor
@@ -315,7 +314,7 @@ User Info
 - [ ] Add password confirmation on sign up
 
 Forms
-- [ ] Is it possible to display backend errors on frontend?
+- [ ] Is it possible to display backend errors on frontend with styling?
     * Currently handling backend and frontend errors separately
 
 Dashboard
@@ -324,11 +323,13 @@ Dashboard
     * Total exercise for the week, broken down by category
     * # of days macro goals were achieved
 
-Diaries
-- [ ] When page is refreshed, diary that was previously displayed is still displayed (currently resets to today’s diary)
+Date
+- [ ] When page is refreshed, date that was previously displayed is still displayed (currently resets to today’s date)
 
 Foods
 - [ ] Recommend foods to eat based on current daily consumption
+- [ ] Add user_id to food so user can choose to see only foods they've created
+- [ ] Add recipes feature
 
 Testing
 - [ ] Add backend and frontend tests
@@ -349,14 +350,15 @@ ISSUES
     * Exercises array is not cleared out when user logs out, is updated when new user logs in
 - [x] Logout should redirect to “/“
 - [x] If I’m in “/meals/meal_id/foods” and I refresh, the URL stays the same but it refreshes as “/foods”
-- [ ] Do I need to get info from the database in each individual container to ensure it is fetched if page refreshes? Currently having issues where foods are not always in state and need to go back to MainContainer to fetch them.
-- [ ] Add Food and MealFood Update form doesn't allow you to press "enter" with decimal, however user can click "Update"
-- [ ] Search feature doesn't work if a space is added
-- [ ] Do I still need to pass diaryDate in location state or is date working since it's in MainContainer?
+- [x] Do I need to get info from the database in each individual container to ensure it is fetched if page refreshes? Currently having issues where foods are not always in state and need to go back to MainContainer to fetch them.
+    * Added conditional in Foods to ensure foods display properly
+- [x] Add Food and MealFood Update form doesn't allow you to press "enter" with decimal, however user can click "Update"
+- [x] Search feature doesn't work if a space is added
 
 
 QUESTIONS
 - [ ] Is there a way to redirect to “/“ for all routes except “/login” and “/signup” if not logged in?
+- [ ] Do I still need to pass diaryDate in location state or is date working since it's in MainContainer?
 
 
 * Globetrotter part 7 - 1:06 into it (starting with /trips/new route) - left off
