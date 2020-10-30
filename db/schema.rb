@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2020_08_05_015444) do
   end
 
   create_table "foods", force: :cascade do |t|
+    t.integer "user_id", null: false
     t.string "brand_name"
     t.string "description"
     t.string "serving_size"
@@ -59,6 +60,7 @@ ActiveRecord::Schema.define(version: 2020_08_05_015444) do
     t.float "potassium"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_foods_on_user_id"
   end
 
   create_table "meal_foods", force: :cascade do |t|
@@ -133,6 +135,7 @@ ActiveRecord::Schema.define(version: 2020_08_05_015444) do
 
   add_foreign_key "diaries", "users"
   add_foreign_key "exercises", "users"
+  add_foreign_key "foods", "users"
   add_foreign_key "meal_foods", "foods"
   add_foreign_key "meal_foods", "meals"
   add_foreign_key "meals", "diaries"
