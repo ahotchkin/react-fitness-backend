@@ -4,8 +4,6 @@ class CreateMealFoods < ActiveRecord::Migration[6.0]
       t.references :meal, null: false, foreign_key: true
       t.references :food, null: false, foreign_key: true
       t.float :number_of_servings
-
-      # figure out which of these need to be included here and which I can pull from mealFoods.attributes.food on the frontend
       t.integer :calories
       t.float :total_fat
       t.float :saturated_fat

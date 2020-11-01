@@ -40,20 +40,15 @@ class Api::V1::MealFoodsController < ApplicationController
   end
 
   def destroy
-    # make sure current user is logged in before deleting exercise??????????
-    # binding.pry
     if current_user.id == current_meal_food.meal.diary.user_id
       current_meal_food.delete
       render json: { message: "MealFood successfully deleted" }, status: 200
-      # how can I get this message to show on frontend????
     else
       error_resp = {
         error: "MealFood could not be found and deleted"
       }
       render json: error_resp, status: :unprocessable_entity
     end
-    # @meal_food = Exercise.find(params[:id])
-    # @meal_food.delete
   end
 
 

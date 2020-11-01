@@ -42,27 +42,20 @@ class Api::V1::ExercisesController < ApplicationController
   end
 
   def destroy
-    # make sure current user is logged in before deleting exercise??????????
-    # binding.pry
     if current_user.id == current_exercise.user.id
       current_exercise.delete
       render json: { message: "Exercise successfully deleted" }, status: 200
-      # how can I get this message to show on frontend????
     else
       error_resp = {
         error: "Exercise could not be found and deleted"
       }
       render json: error_resp, status: :unprocessable_entity
     end
-    # @exercise = Exercise.find(params[:id])
-    # @exercise.delete
   end
 
 
   private
-    # def set_user
-    #   @user = User.find(params.id)
-    # end
+
     def current_exercise
       exercise = Exercise.find_by_id(params[:id])
     end
