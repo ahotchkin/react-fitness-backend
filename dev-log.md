@@ -284,15 +284,21 @@ Wednesday, 10/28
 Thursday, 10/29
 - [x] Add placeholder examples in forms (i.e. new food serving size: 1 cup)
 
-- [ ] Finish styling
-- [ ] Review warnings in console
-- [ ] Refactor
-    - [ ] MainContainer holds any functions that other containers need access to
+Friday, 10/30
+- [x] Finish styling
 
-- [ ] Blog
+Saturday, 10/31
+- [x] Review warnings in console
+- [x] Start blog
+
+Sunday, 11/1
+- [x] Post blog
 - [ ] Video demo
 - [ ] Submit project & schedule assessment
 
+Monday, 11/2
+- [ ] Refactor
+    - [ ] MainContainer holds any functions that other containers need access to
 
 
 <h5>Remaining To Dos</h5>
@@ -356,6 +362,7 @@ ISSUES
     * Added conditional in Foods to ensure foods display properly
 - [x] Add Food and MealFood Update form doesn't allow you to press "enter" with decimal, however user can click "Update"
 - [x] Search feature doesn't work if a space is added
+- [ ] Get this console.error on login and sign up, but not getCurrent/User: [Deprecation] Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.
 
 
 QUESTIONS
