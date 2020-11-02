@@ -305,6 +305,8 @@ Monday, 11/2
 - [ ] Sort foods alphabetically
 - [ ] Should daily calorie and nutrient goals be determined on backend, or does that not matter?
 - [ ] Review any questions in code
+- [ ] Add break in frontend ReadMe after demo video
+- [ ] Add screenshots to ReadMes
 
 
 QUESTIONS
