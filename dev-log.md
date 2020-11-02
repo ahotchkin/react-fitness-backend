@@ -293,20 +293,56 @@ Saturday, 10/31
 
 Sunday, 11/1
 - [x] Post blog
-- [ ] Video demo
-- [ ] Submit project & schedule assessment
+- [x] ReadMes
+- [x] Codes of Conduct
+- [x] Remove unnecessary comments
+- [x] Video demo
+- [x] Submit project & schedule assessment
 
 Monday, 11/2
 - [ ] Refactor
     - [ ] MainContainer holds any functions that other containers need access to
+- [ ] Sort foods alphabetically
+- [ ] Should daily calorie and nutrient goals be determined on backend, or does that not matter?
+- [ ] Review any questions in code
+
+
+QUESTIONS
+- [ ] Is there a way to redirect to “/“ for all routes except “/login” and “/signup” if not logged in?
+- [ ] Is there a way to redirect to a route that exists if user types a route that doesn't exist?
+    * i.e. If user types in "/exercises/abcd" can I redirect to "/exercises"
+- [ ] Do I still need to pass diaryDate in location state or is date working since it's in MainContainer?
+- [ ] When user adds new food should I round nutrients to nearest integer or 1 decimal place?
+
+
+THINGS I NEED TO UNDERSTAND
+- [ ] Spread operator - what is happening when I pass {…props} to a component?
+- [ ] How is reduce working? Used in MealCard.js - is this still being used?
+- [ ] event.persist() - do I need this?
+
+
+ISSUES
+- [x] Can’t type urls into url bar, paths only work when buttons/links are clicked on. Otherwise, "/" is re-rendered when any path is typed in.
+    - *Fixed by rendering Home instead of Redirecting to "/" in App.js for paths in question (/exercises, /diaries)*
+- [x] Get an error if I type /exercises/:id/edit into url bar: Cannot read property 'attributes' of undefined. Works by clicking on Update link for the exercise.
+- [x] Redux store:
+    * Exercises under attributes are only updated on page refresh.
+    * Exercises array on its own is updated with “Add Exercise” button click
+    * Exercises array is not cleared out when user logs out, is updated when new user logs in
+- [x] Logout should redirect to “/“
+- [x] If I’m in “/meals/meal_id/foods” and I refresh, the URL stays the same but it refreshes as “/foods”
+- [x] Do I need to get info from the database in each individual container to ensure it is fetched if page refreshes? Currently having issues where foods are not always in state and need to go back to MainContainer to fetch them.
+    * Added conditional in Foods to ensure foods display properly
+- [x] Add Food and MealFood Update form doesn't allow you to press "enter" with decimal, however user can click "Update"
+- [x] Search feature doesn't work if a space is added
+- [ ] Get this console.error on login and sign up, but not getCurrent/User: [Deprecation] Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.
+
+
+* Globetrotter part 7 - 1:06 into it (starting with /trips/new route) - left off
+* Globetrotter part 11 - 30 min in starts talking about dynamic routes on frontend; starts talking about updating record, goes into part 12
 
 
 <h5>Remaining To Dos</h5>
-<i>Required</i>
-
-Routes (???????????????)
-- [ ] Split into modules
-
 
 Wishlist
 
@@ -347,37 +383,3 @@ Accessibility
 
 Design
 - [ ] Add icons throughout
-
-ISSUES
-- [x] Can’t type urls into url bar, paths only work when buttons/links are clicked on. Otherwise, "/" is re-rendered when any path is typed in.
-    - *Fixed by rendering Home instead of Redirecting to "/" in App.js for paths in question (/exercises, /diaries)*
-- [x] Get an error if I type /exercises/:id/edit into url bar: Cannot read property 'attributes' of undefined. Works by clicking on Update link for the exercise.
-- [x] Redux store:
-    * Exercises under attributes are only updated on page refresh.
-    * Exercises array on its own is updated with “Add Exercise” button click
-    * Exercises array is not cleared out when user logs out, is updated when new user logs in
-- [x] Logout should redirect to “/“
-- [x] If I’m in “/meals/meal_id/foods” and I refresh, the URL stays the same but it refreshes as “/foods”
-- [x] Do I need to get info from the database in each individual container to ensure it is fetched if page refreshes? Currently having issues where foods are not always in state and need to go back to MainContainer to fetch them.
-    * Added conditional in Foods to ensure foods display properly
-- [x] Add Food and MealFood Update form doesn't allow you to press "enter" with decimal, however user can click "Update"
-- [x] Search feature doesn't work if a space is added
-- [ ] Get this console.error on login and sign up, but not getCurrent/User: [Deprecation] Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.
-
-
-QUESTIONS
-- [ ] Is there a way to redirect to “/“ for all routes except “/login” and “/signup” if not logged in?
-- [ ] Is there a way to redirect to a route that exists if user types a route that doesn't exist?
-    * i.e. If user types in "/exercises/abcd" can I redirect to "/exercises"
-- [ ] Do I still need to pass diaryDate in location state or is date working since it's in MainContainer?
-- [ ] When user adds new food should I round nutrients to nearest integer or 1 decimal place?
-
-
-* Globetrotter part 7 - 1:06 into it (starting with /trips/new route) - left off
-* Globetrotter part 11 - 30 min in starts talking about dynamic routes on frontend; starts talking about updating record, goes into part 12
-
-
-THINGS I NEED TO UNDERSTAND
-- [ ] Spread operator - what is happening when I pass {…props} to a component?
-- [ ] How is reduce working? Used in MealCard.js - is this still being used?
-- [ ] event.persist() - do I need this?
