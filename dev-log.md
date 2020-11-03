@@ -293,21 +293,21 @@ Saturday, 10/31
 
 Sunday, 11/1
 - [x] Post blog
-- [x] ReadMes
+- [x] READMEs
 - [x] Codes of Conduct
 - [x] Remove unnecessary comments
 - [x] Video demo
 - [x] Submit project & schedule assessment
 
 Monday, 11/2
+- [x] Add screenshots to READMEs
+
+Tuesday, 11/3
 - [ ] Refactor
     - [ ] MainContainer holds any functions that other containers need access to
 - [ ] Sort foods alphabetically
 - [ ] Should daily calorie and nutrient goals be determined on backend, or does that not matter?
 - [ ] Review any questions in code
-- [ ] Add break in frontend ReadMe after demo video
-- [ ] Add screenshots to ReadMes
-
 
 QUESTIONS
 - [ ] Is there a way to redirect to “/“ for all routes except “/login” and “/signup” if not logged in?
