@@ -1,9 +1,14 @@
 class Api::V1::FoodsController < ApplicationController
 
   def index
-    @foods = Food.all
-
-    render json: FoodSerializer.new(@foods), status: 200
+    if logged_in?
+      @foods = Food.all
+      render json: FoodSerializer.new(@foods), status: 200
+    else
+      render json: {
+        error: "You must be logged in to see the foods database"
+      }
+    end
   end
 
   def create
