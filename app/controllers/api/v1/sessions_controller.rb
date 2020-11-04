@@ -1,4 +1,5 @@
 class Api::V1::SessionsController < ApplicationController
+
   def create
     @user = User.find_by(:username => params[:session][:username])
 
@@ -16,7 +17,6 @@ class Api::V1::SessionsController < ApplicationController
     if logged_in?
       render json: UserSerializer.new(current_user), status: 200
     else
-      # is this necessary?
       render json: {
         error: "No one logged in"
       }
@@ -30,4 +30,5 @@ class Api::V1::SessionsController < ApplicationController
       notice: "Successfully logged out"
     }, status: 200
   end
+  
 end

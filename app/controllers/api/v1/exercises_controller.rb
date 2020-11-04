@@ -1,10 +1,8 @@
 class Api::V1::ExercisesController < ApplicationController
 
   def index
-
     if logged_in?
       @exercises = current_user.exercises
-
       render json: ExerciseSerializer.new(@exercises), status: 200
     else
       render json: {
@@ -14,7 +12,6 @@ class Api::V1::ExercisesController < ApplicationController
   end
 
   def create
-    # should I use build to build on the user's exercises? if I do that do I need to pass in the user_id?????
     @exercise = Exercise.new(exercise_params)
     if @exercise.save
       render json: ExerciseSerializer.new(@exercise), status: :created

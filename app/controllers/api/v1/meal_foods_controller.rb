@@ -16,7 +16,6 @@ class Api::V1::MealFoodsController < ApplicationController
   end
 
   def create
-    # should I use build to build on the user's meal_foods? if I do that do I need to pass in the user_id?????
     @meal_food = MealFood.new(meal_food_params)
     if @meal_food.save
       render json: MealFoodSerializer.new(@meal_food), status: :created

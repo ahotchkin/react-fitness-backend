@@ -12,7 +12,6 @@ class Api::V1::DiariesController < ApplicationController
   end
 
   def create
-    # should I use build to build on the user's diaries? if I do that do I need to pass in the user_id?????
     @diary = Diary.new(diary_params)
     if @diary.save
       @breakfast = @diary.meals.build(:category => "Breakfast")
