@@ -23,10 +23,6 @@ class Api::V1::ExercisesController < ApplicationController
     end
   end
 
-  def show
-    render json: ExerciseSerializer.new(current_exercise), status: 200
-  end
-
   def update
     if current_exercise.update(exercise_params)
       render json: ExerciseSerializer.new(current_exercise), status: 200
