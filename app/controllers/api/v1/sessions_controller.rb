@@ -30,5 +30,5 @@ class Api::V1::SessionsController < ApplicationController
       notice: "Successfully logged out"
     }, status: 200
   end
-  
+
 end

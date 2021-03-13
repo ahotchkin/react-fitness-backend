@@ -303,24 +303,42 @@ Monday, 11/2
 - [x] Add screenshots to READMEs
 
 Tuesday, 11/3
+- [x] Begin reviewing questions in code
+
+Wednesday, 11/4
+- [x] Finish reviewing questions in backend code
+
+Monday, 11/9
+- [x] Refactor
+    - [x] MainContainer holds any functions that other containers need access to
+
+Wednesday, 11/11
 - [ ] Refactor
-    - [ ] MainContainer holds any functions that other containers need access to
 - [ ] Sort foods alphabetically
 - [ ] Should daily calorie and nutrient goals be determined on backend, or does that not matter?
-- [ ] Review any questions in code
+- [x] Do I still need to pass diaryDate in location state or is date working since it's in MainContainer?
+    * No, this has been removed throughout
 
 QUESTIONS
 - [ ] Is there a way to redirect to “/“ for all routes except “/login” and “/signup” if not logged in?
 - [ ] Is there a way to redirect to a route that exists if user types a route that doesn't exist?
     * i.e. If user types in "/exercises/abcd" can I redirect to "/exercises"
-- [ ] Do I still need to pass diaryDate in location state or is date working since it's in MainContainer?
 - [ ] When user adds new food should I round nutrients to nearest integer or 1 decimal place?
 
 
 THINGS I NEED TO UNDERSTAND
-- [ ] Spread operator - what is happening when I pass {…props} to a component?
-- [ ] How is reduce working? Used in MealCard.js - is this still being used?
-- [ ] event.persist() - do I need this?
+- [x] Spread operator - what is happening when I pass {…props} to a component?
+    * I don't have to send as individual props
+- [ ] Sort
+- [x] How is reduce working?
+    * Accumulator (a) and current value (b) are arguments to the callback function (anonymous arrow function, in this case)
+    * Callback function looks at all keys in object b and if b has the key the function sets that key in object a to a[key] + b[key], returning object a
+    * The initial value passed to reduce is an empty object which is used to create a new object based on the desired keys from the callback
+- [x] event.persist() - do I need this?
+    * Yes - needed when using React synthetic events inside an asynchronous function, due to event pooling
+        * Event pooling - whenever an event fires, its event data (an object) is sent to the callback and the event object is immediately cleaned up for later use
+            * In order to access event data asynchronously, i.e. to set state, need to use event.persist()
+    * Not necessary in React 17
 
 
 ISSUES
@@ -338,10 +356,6 @@ ISSUES
 - [x] Add Food and MealFood Update form doesn't allow you to press "enter" with decimal, however user can click "Update"
 - [x] Search feature doesn't work if a space is added
 - [ ] Get this console.error on login and sign up, but not getCurrent/User: [Deprecation] Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.
-
-
-* Globetrotter part 7 - 1:06 into it (starting with /trips/new route) - left off
-* Globetrotter part 11 - 30 min in starts talking about dynamic routes on frontend; starts talking about updating record, goes into part 12
 
 
 <h5>Remaining To Dos</h5>
