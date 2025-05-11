@@ -19,13 +19,13 @@ The frontend provides the user with a dashboard view of their daily nutrition an
 ## Installation & Usage
 
 * Clone this repo
-* Execute bundle install
-* Run rails db:migrate
-* Start the server with rails s
+* Execute `bundle install`
+* Run `rails db:migrate`
+* Start the server with `rails s`
 
 ## Built With
 
-* Ruby version 2.6.1
+* Ruby version 3.2.2
 
 ## Contributing
 
